@@ -12,10 +12,37 @@
       .container {
         max-width: 1320px;
         height: 20vh;
-        border:2px solid black;
-        background-color: aqua;
+        border:1px solid black;
+        background-color: aquamarine;
         margin: auto;
         background-color: white;
+      }
+
+      .ST-background1{
+        display: flex;
+        height: 560px;
+        width: 100%;
+        background-color: aqua;
+      }
+
+      .ST-background1>div:nth-of-type(1){
+        width: 50%;
+        height: 100%;
+        background: #141414;
+        box-sizing: border-box;
+      }
+
+      .ST-background1>div:nth-of-type(2){
+        width: 50%;
+        height: 100%;
+        background-size: cover;
+        background-position: center;
+        background-image: url(https://cdn.marvel.com/content/1x/20240124-newtomu_base_set_dsk.jpg);
+      }
+
+      .ST-background2{
+        height: 560px;
+        background-color: mediumaquamarine;
       }
     
     </style>
@@ -33,11 +60,12 @@
       <section></section>
     </header>
     <main>
-      <!-------------------------- This part if for syed ------------------------------>
-      <section>
-        <div class="container"></div>
+      <!-------------------------- This part if for syed Taqi ------------------------------>
+      <section class="ST-background1">
+        <div></div>
+        <div></div>
       </section>
-      <section>
+      <section class="ST-background2">
         <div class="container"></div>
       </section>
 
