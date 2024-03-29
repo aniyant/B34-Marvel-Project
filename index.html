@@ -4,24 +4,186 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       rel="stylesheet"
-      href="node_modules\bootstrap\dist\css\bootstrap.min.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
     />
-    <script src="node_modules\bootstrap\dist\js\bootstrap.bundle.min.js"></script>
 
+    <!-- Bootstrap CSS CDN -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+
+    <!-- Bootstrap JS CDN -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <style>
-      body {
+      <link
+        rel="stylesheet"
+        href="node_modules\bootstrap\dist\css\bootstrap.min.css"
+        /
+        > <script
+        src="node_modules\bootstrap\dist\js\bootstrap.bundle.min.js"
+        > </script
+        > <style
+        > body {
         margin: 0px;
         padding: 0px;
       }
       .container {
         max-width: 1320px;
-        height: 20vh;
-        border: 2px solid black;
-        background-color: aqua;
+        height: auto;
+        /* border: 2px solid black; */
+        /* background-color: aqua; */
         margin: auto;
-        background-color: white;
+        /* background-color: white; */
+      }
+
+      .vsimg {
+        background-image: url("https://www.google.com/url?sa=i&url=https%3A%2F%2Fstock.adobe.com%2Fsearch%3Fk%3Dmarvel&psig=AOvVaw0t8vMSHqzGHrqwJdqCpwCW&ust=1711743656900000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCJDCnpfkl4UDFQAAAAAdAAAAABAE");
+        background-size: cover;
+        background-position: center;
+      }
+      .bg-black {
+        background-color: black;
+      }
+      /*  */
+      /*  */
+      footer {
+        width: 100%;
+        height: auto;
+        /* background-color: rgb(21, 21, 21); */
+        background-color: black;
+        padding: 70px 0;
+        color: white;
+        /* margin-top: 20px; */
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .vkfooter-col1 img {
+        width: 100%;
+        height: 40%;
+        margin-top: 90px;
+        margin-left: 40px;
+      }
+      .vkfooter-col2 div ul li a {
+        font-size: 12px;
+        font-weight: 400;
+      }
+      .vkfooter-col2 {
+        box-sizing: border-box;
+        display: flex;
+        width: 25%;
+        gap: 10px;
+        margin-top: 30px;
+        /* background-color: blue; */
+        margin-left: 100px;
+      }
+      .vkfooter-col3 > div:nth-child(1) > div:nth-child(2) > p {
+        margin: 0px;
+        color: #737785;
+
+        font-family: "Poppins", sans-serif;
+      }
+      .vkfooter-col3 > div:nth-child(2) > div:nth-child(2) > p {
+        margin: 0px;
+        color: #737785;
+        font-family: "Poppins", sans-serif;
+      }
+      .vkfooter-col3 {
+        display: grid;
+        grid-template-columns: repeat(1, fr);
+        margin-left: 90px;
+        /* background-color: red; */
+        margin-right: 120px;
+      }
+      .vkfooter-col3 > div:nth-child(1) {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        /* padding-top: 35px; */
+      }
+      .vkfooter-col3 > div:nth-child(2) {
+        display: flex;
+        /* align-items: center; */
+        gap: 10px;
+        padding: 0px;
+        /* margin-top: 4px; */
+        /* background-color: lawngreen; */
+        /* text-align: start; */
+      }
+
+      .vkfooter .h4 {
+        font-family: "Poppins", sans-serif;
+        font-weight: 600;
+        font-style: normal;
+      }
+      .vkfooter-col5 {
+        margin-left: 200px;
+      }
+      .vkfooter-col4 > div:nth-of-type(2) {
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        gap: 40px;
+        margin-left: 10px;
+      }
+      .vkfooter-col4 > div:nth-of-type(1) {
+        margin-left: 10px;
+        margin-bottom: 30px;
+      }
+
+      ul {
+        list-style-type: none;
+      }
+      .vkfooter-col2 ul li {
+        margin-bottom: 15px;
+      }
+      .vkfooter-col2 ul li a {
+        font-size: 16px;
+        color: white;
+        text-decoration: none;
+        font-family: "Poppins", sans-serif;
+        font-weight: 600;
+        font-style: normal;
+      }
+      .vkfooter-col4 i {
+        font-size: 24px;
+      }
+      .vkfooter-col2 ul li a:hover {
+        color: #737785;
+      }
+      .vkfooter-col3 img {
+        width: 60%;
+        display: inline-block;
+      }
+      .vklastfooter {
+        width: 100%;
+        height: 10vh;
+        background-color: rgb(21, 21, 21);
+
+        color: #737785;
+      }
+      .vklastfooter > span:nth-of-type(1) {
+        margin-left: 15%;
+      }
+      .vklastfooter > span {
+        margin-left: 20px;
+      }
+      /* #col1 {
+        margin-top: 70px;
+        margin-left: 60px;
+      } */
+      .vkfooter-col4 {
+        margin-right: 130px;
+        margin-top: 40px;
       }
     </style>
   </head>
@@ -64,299 +226,136 @@
       </section>
     </main>
     <!-------------------------- This part if for Vishal ------------------------------>
-    <div class="vs container-fluid bg-black h-100 d-flex">
-      <div
-        class="container-md bg-black d-flex justify-content-center align-items-center vsimg"
-      >
-        <img src="./MV.png" class="img-fluid" alt="..." />
-        <!-- <img src="" alt="" /> -->
-      </div>
-      <div
-        class="container-md bg-black d-flex justify-content-center align-items-center"
-      >
-        <div class="container-sm bg-black">
-          <div class="container bg-black text-center mt-3 text-danger">
-            <h2>MARVEL INSIDER</h2>
-          </div>
-          <div class="container text-center mt-3 .text-body-emphasis">
-            <h3 class="text-white">Watch,Earn,Redeem!</h3>
-          </div>
-          <div class="container mt-3 text-center text-white fs-3">
-            <p>Get rewarded for doing what you already do as a fan.</p>
-          </div>
-          <div
-            class="container d-flex justify-content-center align-items-center mt-3"
-          >
-            <button type="button align-self-center" class="btn btn-danger">
-              JOIN NOW
-            </button>
-          </div>
-          <div class="container bg-black text-center mt-5 text-body-emphasis">
-            <h6 class="text-white">terms and conditions Apply</h6>
+    <div class="container-fluid bg-black">
+      <div class="vs container-fluid bg-black h-100 d-flex">
+        <div
+          class="container-md bg-black d-flex justify-content-center align-items-center vsimg"
+        >
+          <img src="./images/MV.png" class="img-fluid" alt="..." />
+          <!-- <img src="" alt="" /> -->
+        </div>
+        <div
+          class="container-md bg-black d-flex justify-content-center align-items-center"
+        >
+          <div class="container-sm bg-black">
+            <div class="container bg-black text-center mt-3 text-danger">
+              <h2>MARVEL INSIDER</h2>
+            </div>
+            <div
+              class="container text-center mt-3 .text-body-emphasis bg-black"
+            >
+              <h3 class="text-white">Watch,Earn,Redeem!</h3>
+            </div>
+            <div class="container mt-3 text-center text-white fs-3 bg-black">
+              <p>Get rewarded for doing what you already do as a fan.</p>
+            </div>
+            <div
+              class="container d-flex justify-content-center align-items-center mt-3 bg-black"
+            >
+              <button type="button align-self-center" class="btn btn-danger">
+                JOIN NOW
+              </button>
+            </div>
+            <div class="container bg-black text-center mt-5 text-body-emphasis">
+              <h6 class="text-white">terms and conditions Apply</h6>
+            </div>
           </div>
         </div>
+        <!--  -->
       </div>
       <!--  -->
-    </div>
-    <footer>
-      <section>
-        <div class="container"></div>
-      </section>
-      <section>
-        <div class="container">
-          <!DOCTYPE html>
-          <html lang="en">
-            <head>
-              <meta charset="UTF-8" />
-              <meta
-                name="viewport"
-                content="width=device-width, initial-scale=1.0"
-              />
-              <title>Document</title>
-              <link
-                rel="stylesheet"
-                href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-                integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
-                crossorigin="anonymous"
-                referrerpolicy="no-referrer"
-              />
-
-              <style>
-                footer {
-                  width: 100%;
-                  height: 35vh;
-                  background-color: rgb(21, 21, 21);
-                  padding: 70px 0;
-                  color: white;
-                  margin-top: 20px;
-                  display: flex;
-                  justify-content: space-between;
-                }
-
-                .footer-col1 img {
-                  width: 100%;
-                  height: 40%;
-                  margin-top: 90px;
-                  margin-left: 40px;
-                }
-                .footer-col2 div ul li a {
-                  font-size: 12px;
-                  font-weight: 400;
-                }
-                .footer-col2 {
-                  box-sizing: border-box;
-                  display: flex;
-                  width: 25%;
-                  gap: 10px;
-                  margin-top: 70px;
-                  /* background-color: blue; */
-                  margin-left: 100px;
-                }
-                .footer-col3 > div:nth-child(1) > div:nth-child(2) > p {
-                  margin: 0px;
-                  color: #737785;
-
-                  font-family: "Poppins", sans-serif;
-                }
-                .footer-col3 > div:nth-child(2) > div:nth-child(2) > p {
-                  margin: 0px;
-                  color: #737785;
-                  font-family: "Poppins", sans-serif;
-                }
-                .footer-col3 {
-                  display: grid;
-                  grid-template-columns: repeat(1, fr);
-                  margin-left: 90px;
-                  /* background-color: red; */
-                  margin-right: 120px;
-                }
-                .footer-col3 > div:nth-child(1) {
-                  display: flex;
-                  align-items: center;
-                  gap: 10px;
-                }
-                .footer-col3 > div:nth-child(2) {
-                  display: flex;
-                  align-items: center;
-                  gap: 10px;
-                  margin-top: -100px;
-                }
-
-                .footer .h4 {
-                  font-family: "Poppins", sans-serif;
-                  font-weight: 600;
-                  font-style: normal;
-                }
-                .footer-col5 {
-                  margin-left: 200px;
-                }
-                .footer-col4 > div:nth-of-type(2) {
-                  display: grid;
-                  grid-template-columns: auto auto auto auto;
-                  gap: 40px;
-                  margin-left: 10px;
-                }
-                .footer-col4 > div:nth-of-type(1) {
-                  margin-left: 10px;
-                }
-
-                ul {
-                  list-style-type: none;
-                }
-                .footer-col2 ul li {
-                  margin-bottom: 15px;
-                }
-                .footer-col2 ul li a {
-                  font-size: 16px;
-                  color: white;
-                  text-decoration: none;
-                  font-family: "Poppins", sans-serif;
-                  font-weight: 600;
-                  font-style: normal;
-                }
-                .footer-col4 i {
-                  font-size: 24px;
-                }
-                .footer-col2 ul li a:hover {
-                  color: #737785;
-                }
-                .footer-coll3 img {
-                  width: 60%;
-                  display: inline-block;
-                }
-                .lastfooter {
-                  width: 100%;
-                  height: 10vh;
-                  background-color: rgb(21, 21, 21);
-
-                  color: #737785;
-                }
-                .lastfooter > span:nth-of-type(1) {
-                  margin-left: 15%;
-                }
-                .lastfooter > span {
-                  margin-left: 20px;
-                }
-                /* #col1 {
-        margin-top: 70px;
-        margin-left: 60px;
-      } */
-                .footer-col4 {
-                  margin-right: 100px;
-                  margin-top: 50px;
-                }
-                #coll3 {
-                  margin-left: 800px;
-                  margin-top: 600px;
-                }
-              </style>
-            </head>
-            <body>
-              <footer class="footer">
-                <div class="footer-col1" id="col1">
-                  <img src="./m.png" alt="m" />
-                </div>
-                <div class="footer-col2" id="col2">
-                  <div>
-                    <ul>
-                      <li><a href="#">ABOUT MARVEL</a></li>
-                      <li><a href="#">HELP/FAQS</a></li>
-                      <li><a href="#">CAREERS</a></li>
-                      <li><a href="#">INTERNSHIPS</a></li>
-                    </ul>
-                  </div>
-                  <div>
-                    <ul>
-                      <li><a href="#">ADVERTISING</a></li>
-                      <li><a href="#">DISNEY+</a></li>
-                      <li><a href="#">MARVELHQ.COM</a></li>
-                      <li><a href="#">REDEEM DIGITAL COMIC</a></li>
-                    </ul>
-                  </div>
-                </div>
-                <div class="footer-col3" id="col3">
-                  <div>
-                    <div>
-                      <img src="./insider.png" alt="" />
-                    </div>
-                    <div>
-                      <h4 class="h4" style="margin-bottom: 0px">
-                        MARVEL INSIDER
-                      </h4>
-                      <p>Get Rewarded for Being a Marvel Fan</p>
-                    </div>
-                  </div>
-                  <div>
-                    <div>
-                      <img src="u.png" alt="" />
-                    </div>
-                    <div>
-                      <h4 class="h4" style="margin-bottom: 0px">
-                        MARVEL UNLIMITED
-                      </h4>
-                      <p>Acess Over 30,000+ Digital Comics</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="footer-col4" id="">
-                  <div>
-                    <h4 class="h4">FOLLOW MARVEL</h4>
-                  </div>
-                  <div>
-                    <div>
-                      <i
-                        class="fa-brands fa-square-facebook"
-                        style="color: #737785"
-                      ></i>
-                    </div>
-                    <div>
-                      <i
-                        class="fa-brands fa-x-twitter"
-                        style="color: #737785"
-                      ></i>
-                    </div>
-                    <div>
-                      <i
-                        class="fa-brands fa-square-instagram"
-                        style="color: #737785"
-                      ></i>
-                    </div>
-                    <div>
-                      <i class="fa-brands fa-tumblr" style="color: #737785"></i>
-                    </div>
-                    <div>
-                      <i
-                        class="fa-brands fa-youtube"
-                        style="color: #737785"
-                      ></i>
-                    </div>
-                    <div>
-                      <i
-                        class="fa-brands fa-square-snapchat"
-                        style="color: #737785"
-                      ></i>
-                    </div>
-                    <div>
-                      <i
-                        class="fa-brands fa-pinterest"
-                        style="color: #737785"
-                      ></i>
-                    </div>
-                  </div>
-                </div>
-              </footer>
-              <div class="lastfooter">
-                <span>Terms of Use</span>
-                <span>Privacy Policy</span>
-                <span>Addendum to the Global Privacy Policy</span>
-                <span>Interest-Based Ads</span>
-                <span>License Agreement</span>
-                <span>&copy; 2024 MARVEL</span>
+      <div class="vsk container-fluid bg-black h-100">
+        <footer class="vkfooter">
+          <div class="vkfooter-col1" id="vkcol1" style="margin-top;: 190px">
+            <img src="./images/logom.png" alt="m" />
+          </div>
+          <div class="vkfooter-col2" id="vkcol2">
+            <div>
+              <ul>
+                <li><a href="#">ABOUT MARVEL</a></li>
+                <li><a href="#">HELP/FAQS</a></li>
+                <li><a href="#">CAREERS</a></li>
+                <li><a href="#">INTERNSHIPS</a></li>
+              </ul>
+            </div>
+            <div>
+              <ul>
+                <li><a href="#">ADVERTISING</a></li>
+                <li><a href="#">DISNEY+</a></li>
+                <li><a href="#">MARVELHQ.COM</a></li>
+                <li><a href="#">REDEEM DIGITAL COMIC</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="vkfooter-col3" id="vkcol3">
+            <div>
+              <div>
+                <img src="./images/insider.png" alt="" />
               </div>
-            </body>
-          </html>
+              <div>
+                <h5 class="vkh4" style="margin-bottom: 0px">MARVEL INSIDER</h5>
+                <p>Get Rewarded for Being a Marvel Fan</p>
+              </div>
+            </div>
+            <div>
+              <div>
+                <img src="images/u.png" alt="" />
+              </div>
+              <div>
+                <h5 class="vkh4" style="margin-bottom: 0px">
+                  MARVEL UNLIMITED
+                </h5>
+                <p>Acess Over 30,000+ Digital Comics</p>
+              </div>
+            </div>
+          </div>
+          <div class="vkfooter-col4" id="">
+            <div>
+              <h4 class="vkh4">FOLLOW MARVEL</h4>
+            </div>
+            <div>
+              <div>
+                <i
+                  class="fa-brands fa-square-facebook"
+                  style="color: #737785"
+                ></i>
+              </div>
+              <div>
+                <i class="fa-brands fa-x-twitter" style="color: #737785"></i>
+              </div>
+              <div>
+                <i
+                  class="fa-brands fa-square-instagram"
+                  style="color: #737785"
+                ></i>
+              </div>
+              <div>
+                <i class="fa-brands fa-tumblr" style="color: #737785"></i>
+              </div>
+              <div>
+                <i class="fa-brands fa-youtube" style="color: #737785"></i>
+              </div>
+              <div>
+                <i
+                  class="fa-brands fa-square-snapchat"
+                  style="color: #737785"
+                ></i>
+              </div>
+              <div>
+                <i class="fa-brands fa-pinterest" style="color: #737785"></i>
+              </div>
+            </div>
+          </div>
+        </footer>
+        <div class="vklastfooter">
+          <span>Terms of Use</span>
+          <span>Privacy Policy</span>
+          <span>Addendum to the Global Privacy Policy</span>
+          <span>Interest-Based Ads</span>
+          <span>License Agreement</span>
+          <span>&copy; 2024 MARVEL</span>
         </div>
-      </section>
-    </footer>
+      </div>
+    </div>
   </body>
 </html>
