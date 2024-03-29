@@ -117,43 +117,120 @@
         margin: 0%;
       }
 
-      /* <!-- ----------------------------------syed----------------- --> */
-      .ST-background1 {
-        display: flex;
-        height: 560px;
-        width: 100%;
-        background-color: aqua;
-      }
+      /* <!-- ----------------------------------syed Taqi------------------------------- --> */
+      .ST_cardContainer{
+            display: flex;
+            width: 100%;
+            height: auto;
+        }
 
-      .ST-background1 > div:nth-of-type(1) {
-        width: calc(50% + 100px);
-        height: 100%;
-        background: #141414;
-        box-sizing: border-box;
-        border-right: 200px solid;
-        border-bottom: 560px solid transparent;
-      }
+        .ST-background1 {
+            display: flex;
+            height: 560px;
+            width: 100%;
+            background-color: aqua;
+        }
 
-      .ST-background1 > div:nth-of-type(2) {
-        width: calc(50% - 100px);
-        height: 100%;
-        box-sizing: border-box;
-        background: url(https://cdn.marvel.com/content/1x/20240124-newtomu_base_set_dsk.jpg);
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: -150px 0px;
-      }
+        .ST-background1>div:nth-of-type(1) {
+            width: calc(50% + 100px);
+            height: 100%;
+            background: #141414;
+            box-sizing: border-box;
+            border-right: 200px solid;
+            border-bottom: 560px solid transparent;
+            position: relative;
+        }
 
-      .ST-background1 > div:nth-of-type(1) > div {
-        width: 100%;
-        height: 40vh;
-        background-color: red;
-      }
+        .ST-background1>div:nth-of-type(2) {
+            width: calc(50% - 100px);
+            height: 100%;
+            box-sizing: border-box;
+            background: url(https://cdn.marvel.com/content/1x/20240124-newtomu_base_set_dsk.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
 
-      .ST-background2 {
-        height: 560px;
-        background-color: lightgreen;
-      }
+        .ST-background1>div:nth-of-type(1)>div {
+            width: 100%;
+            height: 460px;
+            max-width: 550px;
+            position: absolute;
+            left: auto;
+            right: 0%;
+            top: 50px;
+            padding-left: 4%;
+            /* border: 1px solid red; */
+            border-radius: 10%;
+        }
+
+        .ST-background1>div:nth-of-type(1)>div>img{
+            width: 50%;
+            height: 50%;
+            border-radius: 30px;
+            box-shadow: rgba(99, 59, 56, 0.178) 0px 20px 30px -10px;
+        }
+
+        .ST-background1>div:nth-of-type(1)>div>p{
+            text-transform: uppercase;
+            font-family: "Roboto", sans-serif;
+            color: white;
+            margin: 10px 0 10px 0;
+        }
+
+        .ST-background1>div:nth-of-type(1)>div>h2{
+            text-transform: uppercase;
+            font-family: "Roboto", sans-serif;
+            color: white;
+            padding: 0;
+            font-weight: 800;
+            letter-spacing: 4px;
+        }
+
+        .ST-background1>div:nth-of-type(1)>div>button{
+            text-transform: uppercase;
+            font-family: "Roboto", sans-serif;
+            background: transparent;
+            color: white;
+            border: 1px solid #fff;
+            padding: 10px;
+            
+        }
+
+        .ST-background2 {
+            height: 560px;
+        }
+
+        #carouselExample>button{
+           background-color: #737785;
+        }
+
+        .card{
+            height: auto;
+            margin: 10px;
+        }
+
+        .card:hover >img{
+            cursor: pointer;
+            transform: translateY(-10px);
+        }
+
+        .card:hover>div>h4{
+            cursor: pointer;
+            color: red;
+        }
+
+        .card>div>h4{
+            font-family: "Roboto", sans-serif;
+            font-weight: 750;
+            margin: 0;
+            padding: 0;
+        }
+
+        .card>p {
+            margin-left: 5%;
+            font-size: 18px;
+        }
       /*-------- akash styling------------------------------------------------------------------------------------ */
 
       /* styling first part */
@@ -423,13 +500,183 @@
       <!-------------------------- This part if for syed Taqi ------------------------------>
       <section class="ST-background1">
         <div>
-          <div></div>
+            <div>
+                <img src="./images/MV.png" alt="logo">
+                <p>available now</p>
+                <h2>new on movieverse</h2>
+                <p>Read these plus 30,000+ digital comics for $9.99 a month!</p>
+                <button>get movieverse unlimited</button>
+            </div>
         </div>
         <div></div>
-      </section>
-      <section class="ST-background2">
-        <div class="container"></div>
-      </section>
+    </section>
+
+    <section class="ST-background2">
+        <div class="container">
+            <div id="carouselExample" class="carousel slide">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <div class="ST_cardContainer">
+
+                        <div class="card" style="width: 18rem;">
+                            <img src="https://cdn.marvel.com/u/prod/marvel/i/mg/f/03/6596e12f09391/portrait_uncanny.jpg"
+                                class="card-img-top" alt="img">
+                            <div class="card-body">
+                                <h4 class="card-title">Daredevil: Gang War (2023) #2</h4>
+                            </div>
+                            <p>2024</p>
+                        </div>
+
+                        <div class="card" style="width: 18rem;">
+                            <img src="https://cdn.marvel.com/u/prod/marvel/i/mg/3/f0/6596e1192e54d/detail.jpg"
+                                class="card-img-top" alt="img">
+                            <div class="card-body">
+                                <h4 class="card-title">Luke Cage: Gang War (2023) #3</h4>
+                            </div>
+                            <p>2024</p>
+                        </div>
+
+                        <div class="card" style="width: 18rem;">
+                            <img src="https://cdn.marvel.com/u/prod/marvel/i/mg/9/03/6596e1176504a/detail.jpg"
+                                class="card-img-top" alt="img">
+                            <div class="card-body">
+                                <h4 class="card-title">Miles Morales: Spider-Man (2022) #15</h4>
+                            </div>
+                            <p>2024</p>
+                        </div>
+
+                        <div class="card" style="width: 18rem;">
+                            <img src="https://cdn.marvel.com/u/prod/marvel/i/mg/9/50/65a93b0ef19c2/detail.jpg"
+                                class="card-img-top" alt="img">
+                            <div class="card-body">
+                                <h4 class="card-title">Spider-Woman (2023) #3</h4>
+                            </div>
+                            <p>2024</p>
+                        </div>
+
+                        <div class="card" style="width: 18rem;">
+                            <img src="https://cdn.marvel.com/u/prod/marvel/i/mg/f/a0/65b2c8df2f3ee/detail.jpg"
+                                class="card-img-top" alt="img">
+                            <div class="card-body">
+                                <h4 class="card-title">Deadly Hands of Kung Fu: Gang War (2023) #2</h4>
+                            </div>
+                            <p>2024</p>
+                        </div>
+
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="ST_cardContainer">
+
+                        <div class="card" style="width: 18rem;">
+                            <img src="https://cdn.marvel.com/u/prod/marvel/i/mg/f/e0/65b7df4aebc97/detail.jpg"
+                                class="card-img-top" alt="img">
+                            <div class="card-body">
+                                <h4 class="card-title">The Amazing Spider-Man (2022) #43</h4>
+                            </div>
+                            <p>2024</p>
+                        </div>
+
+                        <div class="card" style="width: 18rem;">
+                            <img src="https://cdn.marvel.com/u/prod/marvel/i/mg/c/80/65b7df6b805ca/detail.jpg"
+                                class="card-img-top" alt="img">
+                            <div class="card-body">
+                                <h4 class="card-title">Miles Morales: Spider-Man (2022) #16</h4>
+                            </div>
+                            <p>2024</p>
+                        </div>
+
+                        <div class="card" style="width: 18rem;">
+                            <img src="https://cdn.marvel.com/u/prod/marvel/i/mg/0/04/65cccf978dca5/detail.jpg"
+                                class="card-img-top" alt="img">
+                            <div class="card-body">
+                                <h4 class="card-title">Spider-Woman (2023) #4</h4>
+                            </div>
+                            <p>2024</p>
+                        </div>
+
+                        <div class="card" style="width: 18rem;">
+                            <img src="https://cdn.marvel.com/u/prod/marvel/i/mg/6/90/65ca4d6b38185/detail.jpg"
+                                class="card-img-top" alt="img">
+                            <div class="card-body">
+                                <h4 class="card-title">The Amazing Spider-Man (2022) #44</h4>
+                            </div>
+                            <p>2024</p>
+                        </div>
+                        
+                        <div class="card" style="width: 18rem;">
+                            <img src="https://cdn.marvel.com/u/prod/marvel/i/mg/6/60/65b7d7b21328d/detail.jpg"
+                                class="card-img-top" alt="img">
+                            <div class="card-body">
+                                <h4 class="card-title">Daredevil: Gang War (2023) #3</h4>
+                            </div>
+                            <p>2024</p>
+                        </div>
+
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="ST_cardContainer">
+
+                        <div class="card" style="width: 18rem;">
+                            <img src="https://cdn.marvel.com/u/prod/marvel/i/mg/3/f0/6596e209af427/detail.jpg"
+                                class="card-img-top" alt="img">
+                            <div class="card-body">
+                                <h4 class="card-title">ORIGINAL X-MEN (2023) #1</h4>
+                            </div>
+                            <p>2024</p>
+                        </div>
+
+                        <div class="card" style="width: 18rem;">
+                            <img src="https://cdn.marvel.com/u/prod/marvel/i/mg/9/80/657a24de3f3a8/detail.jpg"
+                                class="card-img-top" alt="img">
+                            <div class="card-body">
+                                <h4 class="card-title">G.O.D.S. (2023) #3</h4>
+                            </div>
+                            <p>2024</p>
+                        </div>
+
+                        <div class="card" style="width: 18rem;">
+                            <img src="https://cdn.marvel.com/u/prod/marvel/i/mg/6/e0/6596e1d6da356/detail.jpg"
+                                class="card-img-top" alt="img">
+                            <div class="card-body">
+                                <h4 class="card-title">Uncanny Spider-Man (2023) #5</h4>
+                            </div>
+                            <p>2023</p>
+                        </div>
+
+                        <div class="card" style="width: 18rem;">
+                            <img src="https://cdn.marvel.com/u/prod/marvel/i/mg/6/90/6596e22c1f26c/detail.jpg"
+                                class="card-img-top" alt="img">
+                            <div class="card-body">
+                                <h4 class="card-title">Astonishing Iceman (2023) #5</h4>
+                            </div>
+                            <p>2023</p>
+                        </div>
+
+                        <div class="card" style="width: 18rem;">
+                            <img src="https://cdn.marvel.com/u/prod/marvel/i/mg/9/60/6596e1ea2b3d4/detail.jpg"
+                                class="card-img-top" alt="img">
+                            <div class="card-body">
+                                <h4 class="card-title">Uncanny Avengers (2023) #5</h4>
+                            </div>
+                            <p>2023</p>
+                        </div>
+
+                    </div>
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+        </div>
+    </section>
       <!-------------------------- This part if for sunny ------------------------------>
       <section id="sk">
         <div class="container">
