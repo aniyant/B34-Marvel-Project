@@ -9,10 +9,15 @@
       href="node_modules\bootstrap\dist\css\bootstrap.min.css"
     />
     <script src="node_modules\bootstrap\dist\js\bootstrap.bundle.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Shojumaru&display=swap" rel="stylesheet">
     <style>
       body {
         margin: 0px;
-        padding: opx;
+        padding: 0px;
+        box-sizing: border-box;
+        font-family: "Roboto", sans-serif;
       }
       .container {
         max-width: 1320px;
@@ -303,10 +308,7 @@
       .lastfooter > span {
         margin-left: 20px;
       }
-      /* #col1 {
-  margin-top: 70px;
-  margin-left: 60px;
-} */
+    
       .footer-col4 {
         margin-right: 100px;
         margin-top: 50px;
@@ -315,6 +317,52 @@
         margin-left: 800px;
         margin-top: 600px;
       }
+      /* sunny part styles start*/
+      
+      /*layout*/
+      section#sk>div>div>div:nth-child(1){
+        flex-basis: 72%;
+        
+      }
+      section#sk>div>div>div:nth-child(2){
+        flex-basis: 28%;
+      }
+      section#sk .h-cards>div:nth-child(1){
+        flex-basis: 30%;
+      }
+      section#sk .h-cards>div:nth-child(2){
+        flex-basis: 70%;
+        color:green;
+      }
+      section#sk .l-cards>div{
+        flex-basis: 50%;
+      }
+      section#sk .h-cards>div{
+        flex-basis: 50%;
+      }
+      section#sk img{
+        width: 100%;
+        height: auto;
+      }
+
+      /* typograpy */
+      section#sk h5, section#sk .launch-time{
+        color:#6e6e6e;
+        font-weight: 600;
+        font-size: 16px;
+        letter-spacing: 1px;
+      }
+      section#sk p{
+        color:black;
+        font-size: 20px;
+        font-weight: 500;
+      }
+      section#sk .launch-time{
+        font-size: medium;
+      }
+      section#sk div#hybox 
+      /* sunny part styles end */
+
     </style>
   </head>
 
@@ -380,12 +428,12 @@
         <div class="container"></div>
       </section>
       <!-------------------------- This part if for sunny ------------------------------>
-      <section>
+      <section id="sk">
         <div class="container">
-          <div>
-            <div id="latest">
+          <div class="mt-5 mb-5 d-lg-flex gap-5 justify-content-between">
+            <div id="latest" class="text-wrap">
               <h2>THE LATEST</h2>
-              <div class="l-cards">
+              <div class="l-cards py-3 border-bottom border-secondary-subtle d-flex justify-content-between gap-4">
                 <div>
                   <img
                     src="https://cdn.marvel.com/content/1x/pryorcard.jpg"
@@ -395,9 +443,10 @@
                 <div>
                   <h5>COMICS</h5>
                   <p>Meet Madelyne, the X-Men's Most Dangerous Clone</p>
+                  <p class="launch-time">5 hours ago</p>
                 </div>
               </div>
-              <div class="l-cards">
+              <div class="l-cards py-3 border-bottom border-secondary-subtle d-flex justify-content-between gap-4">
                 <div>
                   <img
                     src="https://cdn.marvel.com/content/1x/amazing_spider-man_43_cover_card_2.jpg"
@@ -409,9 +458,10 @@
                   <p>
                     'Amazing Spider-Man: Gang War' Descends on Marvel Unlimited
                   </p>
+                  <p class="launch-time">11 hours ago</p>
                 </div>
               </div>
-              <div class="l-cards">
+              <div class="l-cards py-3 border-bottom border-secondary-subtle d-flex justify-content-between gap-4">
                 <div>
                   <img
                     src="	https://cdn.marvel.com/content/1x/skottie_young_big_marvel_poster_card.jpg"
@@ -424,9 +474,10 @@
                     Celebrate Skottie Young's Big Impact on Marvel Comics with
                     New Variant Covers [&] More
                   </p>
+                  <p class="launch-time">1 day ago</p>
                 </div>
               </div>
-              <div class="l-cards">
+              <div class="l-cards py-3 border-bottom border-secondary-subtle d-flex justify-content-between gap-4">
                 <div>
                   <img
                     src="https://cdn.marvel.com/content/1x/marvel-rivals-announcement-article-card.jpg"
@@ -439,9 +490,10 @@
                     Marvel Rivals PVP Shooter Boasts Incredible Lineup of Marvel
                     Characters
                   </p>
+                  <p class="launch-time">2 days ago</p>
                 </div>
               </div>
-              <div class="l-cards">
+              <div class="l-cards py-3 border-bottom border-secondary-subtle d-flex justify-content-between gap-4">
                 <div>
                   <img
                     src="https://cdn.marvel.com/content/1x/ultimate_spider-man_1_cover_card.jpg"
@@ -454,9 +506,10 @@
                     'Ultimate Spider-Man' #1 Returns to Shops with a Fifth
                     Printing
                   </p>
+                  <p class="launch-time">3 days ago</p>
                 </div>
               </div>
-              <div class="l-cards">
+              <div class="l-cards py-3 border-bottom border-secondary-subtle d-flex justify-content-between gap-4">
                 <div>
                   <img
                     src="https://cdn.marvel.com/content/1x/x-men_97_1_cover_card.jpg"
@@ -466,9 +519,10 @@
                 <div>
                   <h5>COMICS</h5>
                   <p>March 27's New Marvel Comics: The Full List</p>
+                  <p class="launch-time">4 days ago</p>
                 </div>
               </div>
-              <div class="l-cards">
+              <div class="l-cards py-3 border-bottom border-secondary-subtle d-flex justify-content-between gap-4">
                 <div>
                   <img
                     src="https://cdn.marvel.com/content/1x/x-men_forever_2_card.jpg"
@@ -478,9 +532,10 @@
                 <div>
                   <h5>COMICS</h5>
                   <p>'X-Men: Forever' #2 First Look Burns for Jean Grey</p>
+                  <p class="launch-time">4 days ago</p>
                 </div>
               </div>
-              <div class="l-cards">
+              <div class="l-cards py-3 border-bottom border-secondary-subtle d-flex justify-content-between gap-4">
                 <div>
                   <img
                     src="https://cdn.marvel.com/content/1x/venom_2022_18_card.jpg"
@@ -490,18 +545,19 @@
                 <div>
                   <h5>COMICS</h5>
                   <p>Meet Dylan Brock, the Semi-Symbiote Son of Venom</p>
+                  <p class="launch-time">5 days ago</p>
                 </div>
               </div>
-              <div>
-                <button>LOAD MORE</button>
+              <div class="text-center my-3">
+                <button class="p-2">LOAD MORE</button>
               </div>
             </div>
-            <div id="hypebox">
-              <h4>THE HYPE BOX</h4>
-              <p>
+            <div id="hypebox" class="text-wrap">
+              <h2 class="fs-4 fw-bold text-center ">THE HYPE BOX</h2>
+              <p class="fs-6 fw-normal text-center text-wrap">
                 Can’t-miss news and updates from across the Marvel Universe!
               </p>
-              <div class="h-cards">
+              <div class="h-cards py-4 border-bottom border-top border-secondary-subtle d-flex gap-3 justify-content-between">
                 <div>
                   <img
                     src="https://cdn.marvel.com/content/1x/marvel-1943-rise-of-hydra-new-story-trailer-article-card.jpg"
@@ -513,7 +569,7 @@
                   <p>'Marvel 1943: Rise of Hydra' Reveals New Story Trailer</p>
                 </div>
               </div>
-              <div class="h-cards">
+              <div class="h-cards py-4 border-bottom border-secondary-subtle d-flex gap-3 justify-content-between">
                 <div>
                   <img
                     src="https://cdn.marvel.com/content/1x/x-men_97_1_cover_card.jpg"
@@ -525,7 +581,7 @@
                   <p>March 27's New Marvel Comics: The Full List</p>
                 </div>
               </div>
-              <div class="h-cards">
+              <div class="h-cards py-4 border-bottom border-secondary-subtle d-flex gap-3 justify-content-between">
                 <div>
                   <img
                     src="https://cdn.marvel.com/content/1x/marvel-rivals-announcement-article-card.jpg"
@@ -540,7 +596,7 @@
                   </p>
                 </div>
               </div>
-              <div class="h-cards">
+              <div class="h-cards py-4 border-bottom border-secondary-subtle d-flex gap-3 justify-content-between">
                 <div>
                   <img
                     src="https://cdn.marvel.com/content/1x/x-men-97-a-new-age-featurette-article-card.jpg"
@@ -555,7 +611,7 @@
                   </p>
                 </div>
               </div>
-              <div class="h-cards">
+              <div class="h-cards py-4 d-flex gap-3 justify-content-between">
                 <div>
                   <img
                     src="https://cdn.marvel.com/content/1x/1560x876-b.jpg"
