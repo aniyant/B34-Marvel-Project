@@ -157,7 +157,6 @@
             display: flex;
             height: 560px;
             width: 100%;
-            background-color: aqua;
         }
 
         .ST-background1>div:nth-of-type(1) {
@@ -174,7 +173,7 @@
             width: calc(50% - 100px);
             height: 100%;
             box-sizing: border-box;
-            background: url(https://cdn.marvel.com/content/1x/20240124-newtomu_base_set_dsk.jpg);
+            background-image: url(https://cdn.marvel.com/content/1x/20240124-newtomu_base_set_dsk.jpg);
             background-size: cover;
             background-repeat: no-repeat;
             background-position: center;
@@ -189,7 +188,6 @@
             right: 0%;
             top: 50px;
             padding-left: 4%;
-            /* border: 1px solid red; */
             border-radius: 10%;
         }
 
@@ -220,18 +218,38 @@
             text-transform: uppercase;
             font-family: "Roboto", sans-serif;
             background: transparent;
-            color: white;
-            border: 1px solid #fff;
+            color: black;
             padding: 10px;
-            
+        }
+
+        #ST_btn1{
+            --background: #fff;
+            --border-color: #fff;
+            border: 0;
+            border-width: 2px solid white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            background: var(--border-color);
+            padding: 3%;
+            clip-path: polygon(10% 0%, 100% 0, 100% 80%, 90% 100%, 0 100%, 0% 20%);
+            box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;;
         }
 
         .ST-background2 {
             height: 560px;
         }
 
-        #carouselExample>button{
-           background-color: #737785;
+        #carouselExample>button>span:nth-of-type(1):hover{
+           background-color: #687078;
+           transform: scale(1.8);
+            opacity: 1;
+        }
+
+        #carouselExample>button>span{
+            border-radius: 50%;
+            opacity: 0;
         }
 
         .card{
@@ -631,7 +649,7 @@
                 <p>available now</p>
                 <h2>new on movieverse</h2>
                 <p>Read these plus 30,000+ digital comics for $9.99 a month!</p>
-                <button>get movieverse unlimited</button>
+                <button id="ST_btn1" class="fw-bold">get movieverse unlimited</button>
             </div>
         </div>
         <div></div>
@@ -666,7 +684,7 @@
                             <img src="https://cdn.marvel.com/u/prod/marvel/i/mg/9/03/6596e1176504a/detail.jpg"
                                 class="card-img-top" alt="img">
                             <div class="card-body">
-                                <h4 class="card-title">Miles Morales: Spider-Man (2022) #15</h4>
+                                <h4 class="card-title">Miles Morales (2022) #15</h4>
                             </div>
                             <p>2024</p>
                         </div>
@@ -684,7 +702,7 @@
                             <img src="https://cdn.marvel.com/u/prod/marvel/i/mg/f/a0/65b2c8df2f3ee/detail.jpg"
                                 class="card-img-top" alt="img">
                             <div class="card-body">
-                                <h4 class="card-title">Deadly Hands of Kung Fu: Gang War (2023) #2</h4>
+                                <h4 class="card-title">Deadly Hands of Kung Fu:(2023) #2</h4>
                             </div>
                             <p>2024</p>
                         </div>
@@ -698,7 +716,7 @@
                             <img src="https://cdn.marvel.com/u/prod/marvel/i/mg/f/e0/65b7df4aebc97/detail.jpg"
                                 class="card-img-top" alt="img">
                             <div class="card-body">
-                                <h4 class="card-title">The Amazing Spider-Man (2022) #43</h4>
+                                <h4 class="card-title">Amazing Spider-Man (2022) #43</h4>
                             </div>
                             <p>2024</p>
                         </div>
@@ -707,7 +725,7 @@
                             <img src="https://cdn.marvel.com/u/prod/marvel/i/mg/c/80/65b7df6b805ca/detail.jpg"
                                 class="card-img-top" alt="img">
                             <div class="card-body">
-                                <h4 class="card-title">Miles Morales: Spider-Man (2022) #16</h4>
+                                <h4 class="card-title">Spider-Man (2022) #16</h4>
                             </div>
                             <p>2024</p>
                         </div>
@@ -725,7 +743,7 @@
                             <img src="https://cdn.marvel.com/u/prod/marvel/i/mg/6/90/65ca4d6b38185/detail.jpg"
                                 class="card-img-top" alt="img">
                             <div class="card-body">
-                                <h4 class="card-title">The Amazing Spider-Man (2022) #44</h4>
+                                <h4 class="card-title">Amazing Spider-Man (2022) #44</h4>
                             </div>
                             <p>2024</p>
                         </div>
