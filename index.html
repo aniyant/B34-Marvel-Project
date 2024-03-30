@@ -70,9 +70,10 @@
       }
       #rs .rs-box1 > .i1 {
         width: 100%;
+        
       }
 
-      .rs-box2 > .rs-box3 > .i2 {
+      #rs .rs-box2 > .rs-box3 > .i2 {
         width: 100%;
         height: auto;
       }
@@ -112,10 +113,36 @@
         width: 100%;
         height: auto;
       }
-      .rs-container iframe {
-        padding: 0%;
-        margin: 0%;
+      #rs .rs-box1 > .rs-box14 {
+        width: 570px;
+        height: auto;
       }
+      @media (max-width: 836px) {
+        #rs .rs-container {
+          flex-direction: column;
+        }
+        #rs .rs-box1 {
+        width: 100%;
+        height: auto;
+      }
+        #rs .rs-box2 {
+          width: 100%;
+          height: 220px;
+      
+          display: flex;
+          flex-wrap: wrap;
+          flex-direction: column;
+          padding: 10px;
+          gap: 10px;
+          
+        }
+        #rs .rs-box1 > .rs-box14 {
+        width: auto;
+        height: auto;
+      }
+       
+      }
+
 
       /* <!-- ----------------------------------syed Taqi------------------------------- --> */
       .ST_cardContainer{
@@ -881,7 +908,7 @@
         </div>
       </section>
       <!-------------------------- This part if for Rajat ------------------------------>
-      <section>
+      <section id="rs">
         <div class="container">
           <div class="rs-container">
             <div class="rs-box1">
@@ -895,7 +922,18 @@
                 frameborder="0"
               ></iframe
               >`
+  
+              <div class="rs-box14">
+                <h6>TRAILERS & EXTRAS</h6>
+                <h4>The Marvels | Behind the Powers of The Marvels</h4>
+                <p>
+                  Get an inside look at Captain Marvel, Ms. Marvel, and Monica
+                  Rambeau’s powers with VFX Supervisor Tara DeMarco. Marvel
+                  Studios’ The Marvels is now streaming on Disney+.
+                </p>
+              </div>
             </div>
+  
             <div class="rs-box2">
               <div class="rs-box3">
                 <iframe
@@ -1031,6 +1069,7 @@
           </div>
         </div>
       </section>
+  
       <!-------------------------- This part if for chaitali ------------------------------>
       <section id>
         <div class="container">
