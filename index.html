@@ -14,53 +14,36 @@
       referrerpolicy="no-referrer"
     />
 
-    <!-- Bootstrap CSS CDN -->
-    <link
-      rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-    />
-
-    <!-- Bootstrap JS CDN -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- google fonts -->
+    <!-- node modules link -->
+    <link rel="stylesheet"
+    href="node_modules\bootstrap\dist\css\bootstrap.min.css"/ >
+    <script src="node_modules\bootstrap\dist\js\bootstrap.bundle.min.js"></script>
+    <!-- node modules -->
     <style>
-      <link
-        rel="stylesheet"
-        href="node_modules\bootstrap\dist\css\bootstrap.min.css"
-        /
-        > <script
-        src="node_modules\bootstrap\dist\js\bootstrap.bundle.min.js"
-        > </script
-        > <style
-        > body {
-        margin: 0px;
-        padding: 0px;
-      }
-      .container {
+      .vksfooter {
         max-width: 1320px;
-        height: auto;
-        /* border: 2px solid black; */
-        /* background-color: aqua; */
+        /* height: auto; */
         margin: auto;
-        /* background-color: white; */
+        font-family: "Roboto", serif;
+        /* background-color: red; */
+      }
+      .vksfooter section {
+        height: auto;
+        /* width: 100%; */
+        /* background-color: hotpink; */
       }
 
-      .vsimg {
-        background-image: url("https://www.google.com/url?sa=i&url=https%3A%2F%2Fstock.adobe.com%2Fsearch%3Fk%3Dmarvel&psig=AOvVaw0t8vMSHqzGHrqwJdqCpwCW&ust=1711743656900000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCJDCnpfkl4UDFQAAAAAdAAAAABAE");
-        background-size: cover;
-        background-position: center;
-      }
       .bg-black {
         background-color: black;
       }
       /*  */
       /*  */
-      footer {
-        width: 100%;
+      .vks2 subfooter {
+        /* width: 100%; */
         height: auto;
         /* background-color: rgb(21, 21, 21); */
-        background-color: black;
+        background-color: #151515;
         padding: 70px 0;
         color: white;
         /* margin-top: 20px; */
@@ -71,7 +54,7 @@
       .vkfooter-col1 img {
         width: 100%;
         height: 40%;
-        margin-top: 90px;
+        /* margin-top: 20px; */
         margin-left: 40px;
       }
       .vkfooter-col2 div ul li a {
@@ -113,7 +96,7 @@
       }
       .vkfooter-col3 > div:nth-child(2) {
         display: flex;
-        /* align-items: center; */
+        align-items: center;
         gap: 10px;
         padding: 0px;
         /* margin-top: 4px; */
@@ -165,9 +148,10 @@
         display: inline-block;
       }
       .vklastfooter {
-        width: 100%;
+        max-width: 1320px;
         height: 10vh;
-        background-color: rgb(21, 21, 21);
+        background-color: black;
+        margin: auto;
 
         color: #737785;
       }
@@ -182,8 +166,12 @@
         margin-left: 60px;
       } */
       .vkfooter-col4 {
-        margin-right: 130px;
+        margin-right: 100px;
         margin-top: 40px;
+      }
+
+      .vkfooter-col3 div:nth-child(1) div:nth-child(1) img {
+        margin-bottom: 50px;
       }
     </style>
   </head>
@@ -226,14 +214,16 @@
       </section>
     </main>
     <!-------------------------- This part if for Vishal ------------------------------>
-    <div class="container-fluid bg-black">
-      <div class="vs container-fluid bg-black h-100 d-flex">
+    <footer class="vksfooter container-fluid">
+      <section class="vsec1 container-fluid h-100 bg-black d-flex">
         <div
           class="container-md bg-black d-flex justify-content-center align-items-center vsimg"
+          style="width: 60%"
         >
           <img src="./images/MV.png" class="img-fluid" alt="..." />
           <!-- <img src="" alt="" /> -->
         </div>
+        <!-- second child -->
         <div
           class="container-md bg-black d-flex justify-content-center align-items-center"
         >
@@ -257,16 +247,22 @@
               </button>
             </div>
             <div class="container bg-black text-center mt-5 text-body-emphasis">
-              <h6 class="text-white">terms and conditions Apply</h6>
+              <h6 class="text-white">Terms And Conditions Apply</h6>
             </div>
           </div>
         </div>
         <!--  -->
-      </div>
-      <!--  -->
-      <div class="vsk container-fluid bg-black h-100">
-        <footer class="vkfooter">
-          <div class="vkfooter-col1" id="vkcol1" style="margin-top;: 190px">
+      </section>
+
+      <!-- one section -->
+
+      <section class="vks2">
+        <subfooter class="vkfooter">
+          <div
+            class="vkfooter-col1"
+            id="vkcol1"
+            style="margin-top: 90px; margin-left: 20px"
+          >
             <img src="./images/logom.png" alt="m" />
           </div>
           <div class="vkfooter-col2" id="vkcol2">
@@ -287,13 +283,13 @@
               </ul>
             </div>
           </div>
-          <div class="vkfooter-col3" id="vkcol3">
-            <div>
+          <div class="vkfooter-col3 bg-#151515" id="vkcol3">
+            <div class="bg-#151515">
               <div>
                 <img src="./images/insider.png" alt="" />
               </div>
               <div>
-                <h5 class="vkh4" style="margin-bottom: 0px">MARVEL INSIDER</h5>
+                <h5 class="vkh4 bg-black">MARVEL INSIDER</h5>
                 <p>Get Rewarded for Being a Marvel Fan</p>
               </div>
             </div>
@@ -346,7 +342,7 @@
               </div>
             </div>
           </div>
-        </footer>
+        </subfooter>
         <div class="vklastfooter">
           <span>Terms of Use</span>
           <span>Privacy Policy</span>
@@ -355,7 +351,7 @@
           <span>License Agreement</span>
           <span>&copy; 2024 MARVEL</span>
         </div>
-      </div>
-    </div>
+      </section>
+    </footer>
   </body>
 </html>
