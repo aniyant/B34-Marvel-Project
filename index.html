@@ -151,6 +151,7 @@
             display: flex;
             width: 100%;
             height: auto;
+            box-sizing: border-box;
         }
 
         .ST-background1 {
@@ -173,7 +174,7 @@
             width: calc(50% - 100px);
             height: 100%;
             box-sizing: border-box;
-            background-image: url(https://cdn.marvel.com/content/1x/20240124-newtomu_base_set_dsk.jpg);
+            background: url(https://cdn.marvel.com/content/1x/20240124-newtomu_base_set_dsk.jpg);
             background-size: cover;
             background-repeat: no-repeat;
             background-position: center;
@@ -192,8 +193,8 @@
         }
 
         .ST-background1>div:nth-of-type(1)>div>img{
-            width: 50%;
-            height: 50%;
+            width: 40%;
+            height: 40%;
             border-radius: 30px;
             box-shadow: rgba(99, 59, 56, 0.178) 0px 20px 30px -10px;
         }
@@ -244,12 +245,11 @@
         #carouselExample>button>span:nth-of-type(1):hover{
            background-color: #687078;
            transform: scale(1.8);
-            opacity: 1;
         }
 
         #carouselExample>button>span{
             border-radius: 50%;
-            opacity: 0;
+            background-color: #687078;
         }
 
         .card{
