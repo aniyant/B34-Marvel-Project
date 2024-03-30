@@ -152,6 +152,16 @@
 
       /* styling  */
 
+         #ak_firstnav{
+          background-color: #202020;
+         }
+      #ak_firstnav .container-xl{
+        background-color: #202020;
+       }
+
+       #ak_firstnav .ak_firstnav_last{
+
+       }
       #ak_1st {
         display: flex;
         justify-content: center;
@@ -161,6 +171,29 @@
       #ak_1st b {
         color: white;
                  }
+
+                 #ak_3rd {
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+        background-color: #202020;
+      }
+      #ak_3rd_1st {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      #ak_3rd_2nd {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      #ak_3rd h5 {
+        color: white;
+        text-align: center;
+      }
+
 
 
      
@@ -324,26 +357,41 @@
 
      <div id="ak_firstnav">
 
-      <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-xl">
+      <nav class="navbar navbar-expand-lg bg-body-tertiary" >
+        <div class="container-xl" >
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
+
+           <div id="ak_1st">
+             <img src="./images/logo1.png" alt="" />
+             <b>LOG IN | JOIN</b>
+             
+           </div>
+           <div  id="ak_2nd">
+            <img src="./images/mvlogo.png" alt="" />
+           </div>
               
-          <div id="ak_1st">
+         <div>
 
-            
-            <img src="./images/logo1.png" alt="" />
-            <b>LOG IN | JOIN</b>
-           
+          <div id="ak_firstnav_last">
+            <div id="ak_3rd">
+              <div id="ak_3rd_1st">
+                <div>
+                  <img src="./images/u_logo.png" alt="" />
+                </div>
+                <div>
+                  <h5>MARVEL UNLIMITED</h5>
+                  <h5>SUBSCRIBE</h5>
+                </div>
+              </div>
+
+              <div id="ak_3rd_2nd">
+                <img src="./images/search_icon.png" alt="" />
+              </div>
+            </div>
+
           </div>
-
-          <div id="ak_2nd">
-            <img src="./mvlogo.png" alt="" />
-          </div>
-
-
-        </div>
       </nav>
      </div>
 
