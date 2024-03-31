@@ -1,0 +1,245 @@
+/*-------- akash styling------------------------------------------------------------------------------------ */
+
+     
+
+      .icon--insider-circle {
+  fill: white; 
+             }
+      
+
+       #ak_firstnav{
+        width: 100%;
+        background-color: #202020;
+       }
+       .navbar{
+        width: 100% !important;
+        padding-right: 0px !important;
+       }
+         #ak_firstnavv{
+          background-color: #202020;
+          padding: 0px;
+        margin: 0px;
+         
+         }
+         .ak_navbottom{
+            border-bottom: 1px solid #363636;
+            background-color: #202020;
+            
+         }
+      #ak_firstnav .container{
+        background-color: #202020;
+        padding: 0px;
+        margin: auto;
+        
+       
+       }
+      #ak_1st {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #202020;
+        gap: 10px;
+        padding-left: 20px;
+        padding-right: 20px;
+      
+
+        border-left: 1px solid #363636;
+        border-right: 1px solid #363636;
+              }
+      #ak_1st b {
+        color: white;
+                 }
+
+
+                 #ak_2nd img{
+                     
+                     
+                 }
+
+
+
+      #ak_3rd {
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+        background-color: #202020;
+        border-left: 1px solid #363636;
+        border-right: 1px solid #363636;
+        padding-left: 20px;
+        padding-right: 20px;
+      }
+     
+      #ak_3rd_1st {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+         gap: 10px;
+         border-right: 1px solid #363636;
+         padding-right: 20px;
+      }
+       #ak_3rd_1st div img{
+        height:40px;
+        width: 35px;
+       }
+      #ak_3rd_2nd {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      #ak_3rd h5 {
+        color: white;
+        text-align: center;
+      }
+
+
+
+     .large-component{
+        display: none;
+        position: absolute;
+        top: 14%;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100%;
+        height: 70vh;
+        background-color: #ffffff;
+        padding: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        z-index: 2;
+        color: black;
+}
+h6{
+  text-align: center;
+}
+h2{
+  text-align: center;
+  margin-top:35px;
+  margin-bottom: 30px;
+}
+
+  .nav-link:hover .large-component{
+ 
+  display: block;
+}
+
+      #ak_secondnav{
+                   background-color: #202020;
+                   padding-top: 10px;
+                   padding-bottom: 0px;
+      }
+      #ak_secondnav .nav-link{
+        color: white;
+      }
+        
+      .ak_trend{
+        display: flex;
+        justify-content: center;
+        gap:70px;
+        margin-top:80px
+      }
+      .ak_trend .ak_trend1{
+        max-width: 320px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+      }
+      .ak_trend .ak_trend1 p{
+         text-align: center;
+      }
+      .ak_trend .ak_trend1 img{
+        height: 150px;
+        width: 210px;
+      }
+      #ak_thirdnav{
+        background-color: #151515;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+
+      }
+      #ak_thirdnav>p{
+        color: white;
+        padding-top: 20px;
+      }
+    
+      .carousel-img {
+        height: 550px;
+        object-fit: cover;
+        }
+        .carousel-item{
+        position: relative;
+        }
+        .carousel-item .ak_text{
+        position: absolute;
+        left: 8%;
+        top: 40%;
+        color: rgba(255, 255, 255, 1);
+        font-family: "Roboto Condensed", sans-serif;
+        width: 55%;
+        }
+        .carousel-item .ak_text h1{
+        font-size: 50px;
+        font-weight: 800;
+        }
+        .carousel-item .ak_text P{
+        font-size: 20px;
+        }
+        .carousel-item .ak_text button{
+        border: none;
+        padding: 10px 35px;
+        background: rgb(227, 9, 9);
+        color: rgb(255, 255, 255);
+        font-weight: 800;
+        border-radius: 20px 0;
+        transition: 1s ease;
+        }
+        .carousel-item .ak_text button:hover{
+          
+           
+            background-color:#720609;
+
+        }
+        .ak_text-2{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        z-index: 1000;
+        }
+        .ak_text-2 .ak_links{
+           
+
+        padding: 20px;
+       margin-top: -30px;
+       z-index: 1000;
+        background-color: rgb(255, 255, 255);
+
+        }
+
+        .ak_text-2 .ak_links:nth-of-type(1){
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 40px;
+        }
+        .ak_text-2 .ak_links>div{
+      
+        color: rgb(0, 0, 0);
+        font-weight: 570;
+       
+        }
+        .ak_text-2 .ak_links div:hover{
+            color: red;
+            cursor: pointer;
+            
+        }
+        .ak_text-2 .ak_icons{
+        
+        color: rgba(0, 0, 0, 0.526);
+        }
+        .ak_text-2 .ak_icons i{
+        margin: 5px 10px;
+        font-size: 25px;
+        }
+      
