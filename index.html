@@ -282,6 +282,9 @@
 
       /* styling  */
 
+      .icon--insider-circle {
+  fill: white; /* Change the fill color to white */
+}
          #ak_firstnav{
          
          }
@@ -308,6 +311,7 @@
         justify-content: center;
         align-items: center;
         background-color: #202020;
+        gap: 10px;
               }
       #ak_1st b {
         color: white;
@@ -319,11 +323,22 @@
         gap: 20px;
         background-color: #202020;
       }
+      #ak_1st{
+  margin-left: 190px;
+}
+#ak_firstnav_last{
+  margin-right: 190px;
+}
       #ak_3rd_1st {
         display: flex;
         justify-content: center;
         align-items: center;
+         gap: 10px;
       }
+       #ak_3rd_1st div img{
+        height:40px;
+        width: 35px;
+       }
       #ak_3rd_2nd {
         display: flex;
         justify-content: center;
@@ -337,15 +352,62 @@
 
 
 
-     
+     .large-component{
+ display: none;
+        position: absolute;
+        top: 14%;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100%;
+        height: 70vh;
+        background-color: #ffffff;
+        padding: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        z-index: 2;
+        color: black;
+}
+h6{
+  text-align: center;
+}
+h2{
+  text-align: center;
+  margin-top:35px;
+  margin-bottom: 30px;
+}
+
+  .nav-link:hover .large-component{
+ /* Optional: Add underline effect */
+  display: block;
+}
 
       #ak_secondnav{
                    background-color: #202020;
                    padding-top: 10px;
-                   padding-bottom: 10px;
+                   padding-bottom: 0px;
       }
       #ak_secondnav .nav-link{
         color: white;
+         /* padding: 15px 0px; */
+      }
+      .trend{
+        display: flex;
+        justify-content: center;
+        gap:70px;
+        margin-top:80px
+      }
+      .trend .trend1{
+        max-width: 320px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+      }
+      .trend .trend1 p{
+         text-align: center;
+      }
+      .trend .trend1 img{
+        height: 150px;
+        width: 210px;
       }
       #ak_thirdnav{
         background-color: #151515;
@@ -589,38 +651,67 @@
 
       <ul class="nav justify-content-center">
         <li class="nav-item">
-          <a class="nav-link" href="#"><b>NEWS</b></a>
+          <a class="nav-link" href="#"><b>NEWS</b>
+          <div class="large-component">
+             <h6>Latest News &nbsp;&nbsp;  All news</h6>
+             <h2>Trending News</h2>
+             <div class="trend">
+              <div class="trend1"><img src="img/x-men-97-a-new-age-featurette-article-card.jpg" alt="logo">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita laudantium assumenda minus placeat iste.</p>
+              </div>
+              <div class="trend1"><img src="img/x-men_97_1_cover_card.jpg" alt="logo">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo esse sapiente earum similique nobis!</p></div>
+              <div class="trend1"><img src="img/marvel-1943-rise-of-hydra-new-story-trailer-article-card.jpg" alt="">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel quos distinctio accusamus omnis unde?</p></div>
+              <div class="trend1">
+              <img src="img/marvel-rivals-announcement-article-card.jpg" alt="logo"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias quo deserunt necessitatibus consequuntur architecto?</p>
+              </div>
+             </div>
+          </div>
+          </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#"><b>COMIC</b></a>
+          <a class="nav-link" href="#"><b>COMIC</b> 
+            <div class="large-component">
+            <h1>sdifsgdi</h1>
+          </div></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#"><b>CHARACTERS</b></a>
+          <a class="nav-link" href="#"><b>CHARACTERS</b> <div class="large-component">
+            isdbicbidsbcisbcib
+          </div></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#"><b>MOVIES</b></a>
+          <a class="nav-link" href="#"><b>MOVIES</b> <div class="large-component">
+            isdbicbidsbcisbcib
+          </div></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#"><b>TV SHOWS</b></a>
+          <a class="nav-link" href="#"><b>TV SHOWS</b> <div class="large-component">
+            isdbicbidsbcisbcib
+          </div></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#"><b>GAMES</b></a>
+          <a class="nav-link" href="#"><b>GAMES</b> <div class="large-component">
+            isdbicbidsbcisbcib
+          </div></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#"><b>VIDEOS</b></a>
+          <a class="nav-link" href="#"><b>VIDEOS</b> <div class="large-component">
+            isdbicbidsbcisbcib
+          </div></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#"><b>MORE</b></a>
+          <a class="nav-link" href="#"><b>MORE</b> <div class="large-component">
+            isdbicbidsbcisbcib
+          </div></a>
         </li>
-
-       
-
       </ul>
      </div>
 
 
      <div id="ak_thirdnav">
-      <p>STREAM X-MEN '97 EXCLUSIVELY ON  </p><img src="./images/disney.png" alt="">
+      <p>STREAM X-MEN '97 EXCLUSIVELY ON  </p><img src="./images/disneybtn_asset2x_2024.png" alt="">
      
      </div>
     
