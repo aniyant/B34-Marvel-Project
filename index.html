@@ -29,26 +29,105 @@
         background-color: white;
       }
       /*-------------------------default style end------------*/
-      <!---------------------------chaitali----------------------------------------------
-        > .image-container {
-        display: flex;
-        padding: 10px;
-      }
-      .cb-container {
-        display: flex;
-        background-color: black;
-        color: white;
-      }
-      .cb-container > div {
-        margin: auto;
-      }
-      .cb-container button {
-        border-radius: 15px 0px 15px 0px;
-        padding: 10px;
-      }
-      .image-container img {
-        padding: 10px;
-      }
+      <!---------------------------chaitali---------------------------------------------->
+      .CB_cardContainer{
+            display: flex;
+            width: 100%;
+            height: auto;
+        }
+
+        .CB-background1 {
+            display: flex;
+            height: 560px;
+            width: 100%;
+        }
+
+        .CB-background1>div:nth-of-type(1) {
+            width: calc(50% + 100px);
+            height: 100%;
+            background: #141414;
+            box-sizing: border-box;
+            border-right: 200px solid;
+            border-bottom: 560px solid transparent;
+            position: relative;
+        }
+
+        .CB-background1>div:nth-of-type(2) {
+            width: calc(50% - 100px);
+            height: 100%;
+            box-sizing: border-box;
+            background-image: url(https://cdn.marvel.com/content/1x/new_com_20240325_set_01.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        .CB-background1>div:nth-of-type(1)>div {
+            width: 100%;
+            height: 460px;
+            max-width: 550px;
+            position: absolute;
+            left: auto;
+            right: 0%;
+            top: 200px;
+            padding-left: 4%;
+            border-radius: 10%;
+        }
+
+        .CB-background1>div:nth-of-type(1)>div>img{
+            width: 50%;
+            height: 50%;
+            border-radius: 30px;
+            box-shadow: rgba(99, 59, 56, 0.178) 0px 20px 30px -10px;
+        }
+
+        .CB-background1>div:nth-of-type(1)>div>p{
+            text-transform: uppercase;
+            font-family: "Roboto", sans-serif;
+            color: white;
+            margin: 10px 0 10px 0;
+        }
+
+        .CB-background1>div:nth-of-type(1)>div>h2{
+            text-transform: uppercase;
+            font-family: "Roboto", sans-serif;
+            color: white;
+            padding: 0;
+            font-weight: 800;
+            letter-spacing: 4px;
+        }
+
+        .CB-background1>div:nth-of-type(1)>div>button{
+            text-transform: uppercase;
+            font-family: "Roboto", sans-serif;
+            background: transparent;
+            color: black;
+            padding: 10px;
+        }
+
+        #CB_btn1{
+            --background: #fff;
+            --border-color: #fff;
+            border: 0;
+            border-width: 2px solid white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            background: var(--border-color);
+            padding: 3%;
+            clip-path: polygon(10% 0%, 100% 0, 100% 80%, 90% 100%, 0 100%, 0% 20%);
+            box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;;
+        }
+
+        .CB-background2 {
+            height: 560px;
+        }
+        .CB_cardContainer{
+          display: flex;
+        }
+
+       
 
       /* <!-- ---------------rajat--------------- --> */
       #rs .rs-container {
@@ -334,11 +413,8 @@
         color: white;
         text-align: center;
       }
-
-
-
-     
-
+      /*-----------Chaitali------------------*/
+      
       #ak_secondnav{
                    background-color: #202020;
                    padding-top: 10px;
@@ -1188,162 +1264,191 @@
       </section>
   
       <!-------------------------- This part if for chaitali ------------------------------>
-      <section id>
-        <div class="container">
-          <div class="cb-container">
+      <section class="CB-background1">
+        <div>
             <div>
-              <h6>ON SALE 3/27</h6>
-              <h1>NEW COMICS THIS WEEK</h1>
-              <p>Check out the newest Marvel comics coming out this week!</p>
-              <button>RELEASE CALENDAR</button>
+                <p>ON SALE 3/27</p>
+      
+                <h2>NEW COMICS THIS WEEKS</h2>
+                <p>Check out the newest Marvel comics coming out this week!</p>
+                <button id="CB_btn1" class="fw-bold">RELEASE CALENDAR</button>
             </div>
-            <div>
-              <img
-                src="https://cdn.marvel.com/content/1x/new_com_20240325_set_01.jpg"
-                alt=""
-              />
-            </div>
-          </div>
         </div>
-      </section>
-      <section>
-        <div class="container">
+        <div>
+         
+        </div>
+    </section>
+
+    <section class="CB-background2">
+      <div class="container">
           <div id="carouselExample" class="carousel slide">
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <div class="image-container">
-                  <div class="card" style="width: 18rem">
-                    <img
-                      src="https://cdn.marvel.com/u/prod/marvel/i/mg/c/90/65f9a3a74c9aa/portrait_uncanny.jpg"
-                      class="card-img-top"
-                      alt="..."
-                    />
-                    <div class="card-body">
-                      <h5 class="card-title">Jackpot_Black_Cat(2024)#1</h5>
-                      <p class="card-text">2024</p>
-                    </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <div class="CB_cardContainer">
+
+                      <div class="card" style="width: 18rem;">
+                          <img src="https://cdn.marvel.com/u/prod/marvel/i/mg/f/03/6596e12f09391/portrait_uncanny.jpg"
+                              class="card-img-top" alt="img">
+                          <div class="card-body">
+                              <h4 class="card-title">Daredevil: Gang War (2023) #2</h4>
+                          </div>
+                          <p>2024</p>
+                      </div>
+
+                      <div class="card" style="width: 18rem;">
+                          <img src="https://cdn.marvel.com/u/prod/marvel/i/mg/3/f0/6596e1192e54d/detail.jpg"
+                              class="card-img-top" alt="img">
+                          <div class="card-body">
+                              <h4 class="card-title">Luke Cage: Gang War (2023) #3</h4>
+                          </div>
+                          <p>2024</p>
+                      </div>
+
+                      <div class="card" style="width: 18rem;">
+                          <img src="https://cdn.marvel.com/u/prod/marvel/i/mg/9/03/6596e1176504a/detail.jpg"
+                              class="card-img-top" alt="img">
+                          <div class="card-body">
+                              <h4 class="card-title">Miles Morales (2022) #15</h4>
+                          </div>
+                          <p>2024</p>
+                      </div>
+
+                      <div class="card" style="width: 18rem;">
+                          <img src="https://cdn.marvel.com/u/prod/marvel/i/mg/9/50/65a93b0ef19c2/detail.jpg"
+                              class="card-img-top" alt="img">
+                          <div class="card-body">
+                              <h4 class="card-title">Spider-Woman (2023) #3</h4>
+                          </div>
+                          <p>2024</p>
+                      </div>
+
+                      <div class="card" style="width: 18rem;">
+                          <img src="https://cdn.marvel.com/u/prod/marvel/i/mg/f/a0/65b2c8df2f3ee/detail.jpg"
+                              class="card-img-top" alt="img">
+                          <div class="card-body">
+                              <h4 class="card-title">Deadly Hands of Kung Fu:(2023) #2</h4>
+                          </div>
+                          <p>2024</p>
+                      </div>
+
                   </div>
-                  <div class="card" style="width: 18rem">
-                    <img
-                      src="https://cdn.marvel.com/u/prod/marvel/i/mg/9/80/65f9a37344eaa/portrait_uncanny.jpg"
-                      class="card-img-top"
-                      alt="..."
-                    />
-                    <div class="card-body">
-                      <h5 class="card-title">X-Men'97(2024)#1</h5>
-                      <p class="card-text">2024</p>
-                    </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="CB_cardContainer">
+
+                      <div class="card" style="width: 18rem;">
+                          <img src="https://cdn.marvel.com/u/prod/marvel/i/mg/c/90/65f9a3a74c9aa/portrait_uncanny.jpg"
+                              class="card-img-top" alt="img">
+                          <div class="card-body">
+                              <h4 class="card-title">Amazing Spider-Man (2022) #43</h4>
+                          </div>
+                          <p>2024</p>
+                      </div>
+
+                      <div class="card" style="width: 18rem;">
+                          <img src="https://cdn.marvel.com/u/prod/marvel/i/mg/c/80/65b7df6b805ca/detail.jpg"
+                              class="card-img-top" alt="img">
+                          <div class="card-body">
+                              <h4 class="card-title">Spider-Man (2022) #16</h4>
+                          </div>
+                          <p>2024</p>
+                      </div>
+
+                      <div class="card" style="width: 18rem;">
+                          <img src="https://cdn.marvel.com/u/prod/marvel/i/mg/0/04/65cccf978dca5/detail.jpg"
+                              class="card-img-top" alt="img">
+                          <div class="card-body">
+                              <h4 class="card-title">Spider-Woman (2023) #4</h4>
+                          </div>
+                          <p>2024</p>
+                      </div>
+
+                      <div class="card" style="width: 18rem;">
+                          <img src="https://cdn.marvel.com/u/prod/marvel/i/mg/6/90/65ca4d6b38185/detail.jpg"
+                              class="card-img-top" alt="img">
+                          <div class="card-body">
+                              <h4 class="card-title">Amazing Spider-Man (2022) #44</h4>
+                          </div>
+                          <p>2024</p>
+                      </div>
+                      
+                      <div class="card" style="width: 18rem;">
+                          <img src="https://cdn.marvel.com/u/prod/marvel/i/mg/6/60/65b7d7b21328d/detail.jpg"
+                              class="card-img-top" alt="img">
+                          <div class="card-body">
+                              <h4 class="card-title">Daredevil: Gang War (2023) #3</h4>
+                          </div>
+                          <p>2024</p>
+                      </div>
+
                   </div>
-                  <div class="card" style="width: 18rem">
-                    <img
-                      src="https://cdn.marvel.com/u/prod/marvel/i/mg/9/90/65f9a38b0f14e/portrait_uncanny.jpg"
-                      class="card-img-top"
-                      alt="..."
-                    />
-                    <div class="card-body">
-                      <h5 class="card-title">Ultimate_Spider-Man(2024)#3</h5>
-                      <p class="card-text">2024</p>
-                    </div>
-                  </div>
-                  <div class="card" style="width: 18rem">
-                    <img
-                      src="https://cdn.marvel.com/u/prod/marvel/i/mg/4/20/65f9a3b157587/portrait_uncanny.jpg"
-                      class="card-img-top"
-                      alt="..."
-                    />
-                    <div class="card-body">
-                      <h5 class="card-title">G.O.D.S.(2023)#6</h5>
-                      <p class="card-text">2024</p>
-                    </div>
-                  </div>
-                  <div class="card" style="width: 18rem">
-                    <img
-                      src="https://cdn.marvel.com/u/prod/marvel/i/mg/6/30/65f9a3a5061e2/portrait_uncanny.jpg"
-                      class="card-img-top"
-                      alt="..."
-                    />
-                    <div class="card-body">
-                      <h5 class="card-title">
-                        Rise Of The Powers Of X(2024)#3
-                      </h5>
-                      <p class="card-text">2024</p>
-                    </div>
-                  </div>
-                  <div class="card" style="width: 18rem">
-                    <img
-                      src="https://cdn.marvel.com/u/prod/marvel/i/mg/7/20/65f9a373853ed/portrait_uncanny.jpg"
-                      class="card-img-top"
-                      alt="..."
-                    />
-                    <div class="card-body">
-                      <h5 class="card-title">Wolverine(2020)#46</h5>
-                      <p class="card-text">2024</p>
-                    </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="CB_cardContainer">
+
+                      <div class="card" style="width: 18rem;">
+                          <img src="https://cdn.marvel.com/u/prod/marvel/i/mg/3/f0/6596e209af427/detail.jpg"
+                              class="card-img-top" alt="img">
+                          <div class="card-body">
+                              <h4 class="card-title">ORIGINAL X-MEN (2023) #1</h4>
+                          </div>
+                          <p>2024</p>
+                      </div>
+
+                      <div class="card" style="width: 18rem;">
+                          <img src="https://cdn.marvel.com/u/prod/marvel/i/mg/9/80/657a24de3f3a8/detail.jpg"
+                              class="card-img-top" alt="img">
+                          <div class="card-body">
+                              <h4 class="card-title">G.O.D.S. (2023) #3</h4>
+                          </div>
+                          <p>2024</p>
+                      </div>
+
+                      <div class="card" style="width: 18rem;">
+                          <img src="https://cdn.marvel.com/u/prod/marvel/i/mg/6/e0/6596e1d6da356/detail.jpg"
+                              class="card-img-top" alt="img">
+                          <div class="card-body">
+                              <h4 class="card-title">Uncanny Spider-Man (2023) #5</h4>
+                          </div>
+                          <p>2023</p>
+                      </div>
+
+                      <div class="card" style="width: 18rem;">
+                          <img src="https://cdn.marvel.com/u/prod/marvel/i/mg/6/90/6596e22c1f26c/detail.jpg"
+                              class="card-img-top" alt="img">
+                          <div class="card-body">
+                              <h4 class="card-title">Astonishing Iceman (2023) #5</h4>
+                          </div>
+                          <p>2023</p>
+                      </div>
+
+                      <div class="card" style="width: 18rem;">
+                          <img src="https://cdn.marvel.com/u/prod/marvel/i/mg/c/90/65f9a3a74c9aa/portrait_uncanny.jpg"
+                              class="card-img-top" alt="img">
+                          <div class="card-body">
+                              <h4 class="card-title">Uncanny Avengers (2023) #5</h4>
+                          </div>
+                          <p>2023</p>
+                      </div>
+
                   </div>
                 </div>
               </div>
-              <div class="carousel-item">
-                <svg
-                  class="bd-placeholder-img bd-placeholder-img-lg d-block w-100"
-                  width="800"
-                  height="400"
-                  xmlns="http://www.w3.org/2000/svg"
-                  role="img"
-                  aria-label="Placeholder: Second slide"
-                  preserveAspectRatio="xMidYMid slice"
-                  focusable="false"
-                >
-                  <title>Placeholder</title>
-                  <rect width="100%" height="100%" fill="#666"></rect>
-                  <text x="50%" y="50%" fill="#444" dy=".3em">
-                    Second slide
-                  </text>
-                </svg>
-              </div>
-              <div class="carousel-item">
-                <svg
-                  class="bd-placeholder-img bd-placeholder-img-lg d-block w-100"
-                  width="800"
-                  height="400"
-                  xmlns="http://www.w3.org/2000/svg"
-                  role="img"
-                  aria-label="Placeholder: Third slide"
-                  preserveAspectRatio="xMidYMid slice"
-                  focusable="false"
-                >
-                  <title>Placeholder</title>
-                  <rect width="100%" height="100%" fill="#555"></rect>
-                  <text x="50%" y="50%" fill="#333" dy=".3em">Third slide</text>
-                </svg>
-              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
             </div>
-            <button
-              class="carousel-control-prev"
-              type="button"
-              data-bs-target="#carouselExample"
-              data-bs-slide="prev"
-            >
-              <span
-                class="carousel-control-prev-icon"
-                aria-hidden="true"
-              ></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button
-              class="carousel-control-next"
-              type="button"
-              data-bs-target="#carouselExample"
-              data-bs-slide="next"
-            >
-              <span
-                class="carousel-control-next-icon"
-                aria-hidden="true"
-              ></span>
-              <span class="visually-hidden">Next</span>
-            </button>
-          </div>
-        </div>
-      </section>
+      </div>
+  </section>
+    
+
+      
+     
     </main>
 
     <!-------------------------- This part if for Vishal ------------------------------>
