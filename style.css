@@ -131,9 +131,9 @@
         background-color: #ffffff;
         padding: 10px;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-        z-index: 2;
+        z-index: 1001;
         color: black;
-        padding-bottom: 100px;
+       
 }
  #ak_secondnav h6{
   text-align: center;
