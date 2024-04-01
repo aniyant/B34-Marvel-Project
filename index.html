@@ -266,8 +266,26 @@
           "blackbox imagebox";
       }
 
+      /* .content-div{
+        width: calc(50% + 100px);
+        height: 100%;
+        position: relative;
+        background: #141414;
+      } */
+
+      /* .image-div{
+        width: calc(50% - 100px);
+        height: 100%;
+        border-left: 200px solid #141414;
+        border-bottom: 560px solid transparent;
+        background: url(https://cdn.marvel.com/content/1x/20240124-newtomu_base_set_dsk.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+      } */
+
       .ST-background1>div:nth-of-type(1) {
-        width: 100%;
+        width:100%;
         height: 100%;
         background: #141414;
         box-sizing: border-box;
@@ -299,10 +317,10 @@
       }
 
       .ST-background1>div:nth-of-type(1)>div>img {
+        padding: 20px;
         width: 40%;
         height: 40%;
         border-radius: 30px;
-        box-shadow: rgba(99, 59, 56, 0.178) 0px 20px 30px -10px;
       }
 
       .ST-background1>div:nth-of-type(1)>div>p {
@@ -317,7 +335,6 @@
         font-family: "Roboto", sans-serif;
         color: white;
         padding: 0;
-        font-weight: 800;
         letter-spacing: 4px;
       }
 
@@ -330,22 +347,33 @@
       }
 
       #ST_btn1 {
-        border: 1px solid white;
-        padding: 10px 35px;
-        background: rgb(24, 23, 23);
-        color: rgb(255, 255, 255);
-        font-weight: 800;
-        border-radius: 20px 0;
-        transition: 1s ease;
+            --background: #fff;
+            --border-color: #e6252b;
+            border-width: 1px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            background: var(--border-color);
+            padding: 3%;
+            clip-path: polygon(10% 0%, 100% 0, 100% 80%, 90% 100%, 0 100%, 0% 20%);
+            box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+            transition: 0.2s ease; 
       }
 
       #ST_btn1:hover {
         transform: scale(1.025);
-        color: #fff;
+        --border-color: #fff;
+        color: #e6252b;
       }
 
       .ST-background2 {
         height: 560px;
+      }
+
+      .ST-background2>div:nth-of-type(1){
+        position: relative;
+        top: -30px;
       }
 
       #carouselExample>button>span:nth-of-type(1):hover {
@@ -767,7 +795,7 @@
     <main>
       <!-------------------------- This part if for syed Taqi ------------------------------>
       <section class="ST-background1">
-        <div>
+        <div class="content-div">
             <div>
                 <img src="./images/MV.png" alt="logo">
                 <p>available now</p>
@@ -776,7 +804,7 @@
                 <button id="ST_btn1" class="fw-bold">get movieverse unlimited</button>
             </div>
         </div>
-        <div></div>
+        <div class="image-div"></div>
     </section>
 
     <section class="ST-background2">
