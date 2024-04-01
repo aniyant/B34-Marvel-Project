@@ -10,15 +10,18 @@
        #ak_firstnav{
         width: 100%;
         background-color: #202020;
+        border-bottom: 1px solid #363636;
        }
        .navbar{
         width: 100% !important;
         padding-right: 0px !important;
+        background-color: #202020;
        }
          #ak_firstnavv{
-          background-color: #202020;
+          /* background-color: #202020; */
           padding: 0px;
         margin: 0px;
+        background-color: #202020;
          
          }
          .ak_navbottom{
@@ -46,14 +49,22 @@
         border-left: 1px solid #363636;
         border-right: 1px solid #363636;
               }
+
+              #ak_1st img:hover{
+                cursor: pointer;
+              }
+
+              #ak_1st b:hover{
+                cursor: pointer;
+              }
       #ak_1st b {
         color: white;
                  }
 
 
-                 #ak_2nd img{
+                 #ak_2nd img:hover{
                      
-                     
+                    cursor: pointer;
                  }
 
 
@@ -77,6 +88,14 @@
          border-right: 1px solid #363636;
          padding-right: 20px;
       }
+
+      #ak_3rd_2nd img:hover{
+                cursor: pointer;
+      }
+
+      #ak_3rd_1st img,h5:hover{
+        cursor: pointer;
+      }
        #ak_3rd_1st div img{
         height:40px;
         width: 35px;
@@ -85,6 +104,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        background-color: #202020;
       }
 
       #ak_3rd h5 {
@@ -92,6 +112,12 @@
         text-align: center;
       }
 
+      #ak_thirdnav p,img:hover{
+        cursor: pointer;
+      }
+
+
+      /*  */
 
 
      .large-component{
@@ -107,11 +133,12 @@
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
         z-index: 2;
         color: black;
+        padding-bottom: 100px;
 }
-h6{
+ #ak_secondnav h6{
   text-align: center;
 }
-h2{
+#ak_secondnav h2{
   text-align: center;
   margin-top:35px;
   margin-bottom: 30px;
@@ -141,15 +168,28 @@ h2{
         max-width: 320px;
         display: flex;
         flex-direction: column;
+        gap: 20px;
         align-items: center;
 
       }
-      .ak_trend .ak_trend1 p{
+      .ak_trend .ak_trend1 h4{
          text-align: center;
       }
+      .ak_trend .ak_trend1 h3{
+        text-align: center;
+        color: #8e9098;
+     }
       .ak_trend .ak_trend1 img{
-        height: 150px;
-        width: 210px;
+        height: 250px;
+        width: 300px;
+      }
+
+
+      .ak_innernav
+      {
+        display: flex;
+        justify-content: space-around;
+        padding-bottom: 100px;
       }
       #ak_thirdnav{
         background-color: #151515;
@@ -241,5 +281,9 @@ h2{
         .ak_text-2 .ak_icons i{
         margin: 5px 10px;
         font-size: 25px;
+        }
+
+        .ak_icons i:hover{
+            cursor: pointer;
         }
       
