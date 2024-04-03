@@ -1,13 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="./vishalstyle.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link
@@ -25,6 +21,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">   
+      <link rel="stylesheet" href="./vishalstyle.css">
     <style>
       /* --------------------default style start---------------------- */
       body {
@@ -562,14 +559,6 @@ margin-bottom: 20px;
       }
 
       /*-------- akash styling------------------------------------------------------------------------------------ */
-
-      
-
-      
-
-      /*-- -------------------------------------------------visal---------------------- */
-
-      /*-- ---------------------------------------visal end---------------------- */
       
       /* sunny part styles start*/
 
@@ -643,10 +632,23 @@ margin-bottom: 20px;
         --border-color: #141414;
         color: #fff;
       }
+      
+      .divider {
+        width: 80%;
+        margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
+.divider::before, .divider::after {
+  flex: 1;
+  content: '';
+  padding: 2px;
+  background-color: red;
+  margin: 5px;
+}
 
-
-      section#sk div#hybox
       /* sunny part styles end */
     </style>
   </head>
@@ -950,9 +952,9 @@ margin-bottom: 20px;
         <div class="content-div">
             <div>
                 <img src="./images/MvV.png" alt="logo">
-                <p class="fw-bold">available now</p>
-                <h2 class="text-start">new on movieverse</h2>
-                <p class="fw-bold">Read these plus 30,000+ digital comics for $9.99 a month!</p>
+                <p>available now</p>
+                <h2>new on movieverse</h2>
+                <p>Read these plus 30,000+ digital comics for $9.99 a month!</p>
                 <button id="ST_btn1" class="fw-bold">get movieverse unlimited</button>
             </div>
         </div>
@@ -1128,10 +1130,10 @@ margin-bottom: 20px;
       <!-------------------------- This part if for sunny ------------------------------>
       <section id="sk">
         <div class="container">
-          <div class="mt-5 mb-5 d-lg-flex gap-5 justify-content-between">
-            <div id="latest" class="text-wrap">
-              <h2>THE LATEST</h2>
-              <div class="l-cards py-3 border-bottom border-secondary-subtle d-flex justify-content-between gap-4">
+          <div class="mt-5 mb-5 p-2 d-lg-flex gap-5 justify-content-center">
+            <div id="latest" class="text-wrap p-2 mb-2">
+              <h2 class="divider">THE LATEST</h2>
+              <div class="l-cards py-3 border-bottom border-secondary-subtle d-sm-flex justify-content-between gap-4">
                 <div>
                   <img
                     src="https://cdn.marvel.com/content/1x/pryorcard.jpg"
@@ -1139,12 +1141,12 @@ margin-bottom: 20px;
                   />
                 </div>
                 <div>
-                  <h5>COMICS</h5>
-                  <p>Meet Madelyne, the X-Men's Most Dangerous Clone</p>
-                  <p class="launch-time">5 hours ago</p>
+                  <h5 class="p-2">COMICS</h5>
+                  <p class="p-2">Meet Madelyne, the X-Men's Most Dangerous Clone</p>
+                  <p class="launch-time p-2">5 hours ago</p>
                 </div>
               </div>
-              <div class="l-cards py-3 border-bottom border-secondary-subtle d-flex justify-content-between gap-4">
+              <div class="l-cards py-3 border-bottom border-secondary-subtle d-sm-flex justify-content-between gap-4">
                 <div>
                   <img
                     src="https://cdn.marvel.com/content/1x/amazing_spider-man_43_cover_card_2.jpg"
@@ -1152,14 +1154,14 @@ margin-bottom: 20px;
                   />
                 </div>
                 <div>
-                  <h5>COMICS</h5>
-                  <p>
+                  <h5 class="p-2">COMICS</h5>
+                  <p class="p-2">
                     'Amazing Spider-Man: Gang War' Descends on Marvel Unlimited
                   </p>
-                  <p class="launch-time">11 hours ago</p>
+                  <p class="launch-time p-2">11 hours ago</p>
                 </div>
               </div>
-              <div class="l-cards py-3 border-bottom border-secondary-subtle d-flex justify-content-between gap-4">
+              <div class="l-cards py-3 border-bottom border-secondary-subtle d-sm-flex justify-content-between gap-4">
                 <div>
                   <img
                     src="	https://cdn.marvel.com/content/1x/skottie_young_big_marvel_poster_card.jpg"
@@ -1167,15 +1169,15 @@ margin-bottom: 20px;
                   />
                 </div>
                 <div>
-                  <h5>COMICS</h5>
-                  <p>
+                  <h5 class="p-2">COMICS</h5>
+                  <p class="p-2">
                     Celebrate Skottie Young's Big Impact on Marvel Comics with
                     New Variant Covers [&] More
                   </p>
-                  <p class="launch-time">1 day ago</p>
+                  <p class="launch-time p-2">1 day ago</p>
                 </div>
               </div>
-              <div class="l-cards py-3 border-bottom border-secondary-subtle d-flex justify-content-between gap-4">
+              <div class="l-cards py-3 border-bottom border-secondary-subtle d-sm-flex justify-content-between gap-4">
                 <div>
                   <img
                     src="https://cdn.marvel.com/content/1x/marvel-rivals-announcement-article-card.jpg"
@@ -1183,15 +1185,15 @@ margin-bottom: 20px;
                   />
                 </div>
                 <div>
-                  <h5>GAMES</h5>
-                  <p>
+                  <h5 class="p-2">GAMES</h5>
+                  <p class="p-2">
                     Marvel Rivals PVP Shooter Boasts Incredible Lineup of Marvel
                     Characters
                   </p>
-                  <p class="launch-time">2 days ago</p>
+                  <p class="launch-time p-2">2 days ago</p>
                 </div>
               </div>
-              <div class="l-cards py-3 border-bottom border-secondary-subtle d-flex justify-content-between gap-4">
+              <div class="l-cards py-3 border-bottom border-secondary-subtle d-sm-flex justify-content-between gap-4">
                 <div>
                   <img
                     src="https://cdn.marvel.com/content/1x/ultimate_spider-man_1_cover_card.jpg"
@@ -1199,15 +1201,15 @@ margin-bottom: 20px;
                   />
                 </div>
                 <div>
-                  <h5>COMICS</h5>
-                  <p>
+                  <h5 class="p-2">COMICS</h5>
+                  <p class="p-2">
                     'Ultimate Spider-Man' #1 Returns to Shops with a Fifth
                     Printing
                   </p>
-                  <p class="launch-time">3 days ago</p>
+                  <p class="launch-time p-2">3 days ago</p>
                 </div>
               </div>
-              <div class="l-cards py-3 border-bottom border-secondary-subtle d-flex justify-content-between gap-4">
+              <div class="l-cards py-3 border-bottom border-secondary-subtle d-sm-flex justify-content-between gap-4">
                 <div>
                   <img
                     src="https://cdn.marvel.com/content/1x/x-men_97_1_cover_card.jpg"
@@ -1215,12 +1217,12 @@ margin-bottom: 20px;
                   />
                 </div>
                 <div>
-                  <h5>COMICS</h5>
-                  <p>March 27's New Marvel Comics: The Full List</p>
-                  <p class="launch-time">4 days ago</p>
+                  <h5 class="p-2">COMICS</h5>
+                  <p class="p-2">March 27's New Marvel Comics: The Full List</p>
+                  <p class="launch-time p-2">4 days ago</p>
                 </div>
               </div>
-              <div class="l-cards py-3 border-bottom border-secondary-subtle d-flex justify-content-between gap-4">
+              <div class="l-cards py-3 border-bottom border-secondary-subtle d-sm-flex justify-content-between gap-4">
                 <div>
                   <img
                     src="https://cdn.marvel.com/content/1x/x-men_forever_2_card.jpg"
@@ -1228,12 +1230,12 @@ margin-bottom: 20px;
                   />
                 </div>
                 <div>
-                  <h5>COMICS</h5>
-                  <p>'X-Men: Forever' #2 First Look Burns for Jean Grey</p>
-                  <p class="launch-time">4 days ago</p>
+                  <h5 class="p-2">COMICS</h5>
+                  <p class="p-2">'X-Men: Forever' #2 First Look Burns for Jean Grey</p>
+                  <p class="launch-time p-2">4 days ago</p>
                 </div>
               </div>
-              <div class="l-cards py-3 border-bottom border-secondary-subtle d-flex justify-content-between gap-4">
+              <div class="l-cards py-3 border-bottom border-secondary-subtle d-sm-flex justify-content-between gap-4">
                 <div>
                   <img
                     src="https://cdn.marvel.com/content/1x/venom_2022_18_card.jpg"
@@ -1241,17 +1243,17 @@ margin-bottom: 20px;
                   />
                 </div>
                 <div>
-                  <h5>COMICS</h5>
-                  <p>Meet Dylan Brock, the Semi-Symbiote Son of Venom</p>
-                  <p class="launch-time">5 days ago</p>
+                  <h5 class="p-2">COMICS</h5>
+                  <p class="p-2">Meet Dylan Brock, the Semi-Symbiote Son of Venom</p>
+                  <p class="launch-time p-2">5 days ago</p>
                 </div>
               </div>
               <div class="text-center my-3">
                 <button class="p-2 SK_btn fw-bold">LOAD MORE</button>
               </div>
             </div>
-            <div id="hypebox" class="text-wrap">
-              <h2 class="fs-4 fw-bold text-center ">THE HYPE BOX</h2>
+            <div id="hypebox" class="text-wrap p-2 mt-1">
+              <h2 class="fs-4 fw-bold text-center divider">THE HYPE BOX</h2>
               <p class="fs-6 fw-normal text-center text-wrap">
                 Can’t-miss news and updates from across the Marvel Universe!
               </p>
@@ -1495,10 +1497,10 @@ margin-bottom: 20px;
       <section class="CB-background1">
         <div>
             <div>
-                <p class="fw-bold">ON SALE 3/27</p>
+                <p>ON SALE 3/27</p>
       
-                <h2 class="text-start">NEW COMICS THIS WEEKS</h2>
-                <p class="fw-bold">Check out the newest Marvel comics coming out this week!</p>
+                <h2>NEW COMICS THIS WEEKS</h2>
+                <p>Check out the newest Marvel comics coming out this week!</p>
                 <button id="CB_btn1" class="fw-bold">RELEASE CALENDAR</button>
             </div>
         </div>
@@ -1691,222 +1693,90 @@ margin-bottom: 20px;
     </main>
 
     <!-------------------------- This part if for Vishal ------------------------------>
-    <!-- <footer>
-      <section>
-        <div class="container">
-          <div class="vkbox d-flex" id="vk-1">
-           
-
+    <footer>
+      <section class="bg-black">
+        <div class="container px-0">
+          <div class="vkbox d-md-flex bg-black" id="vk-1">
+           <div style="flex-basis: 50%">
+            <img src="./images/MvV.png" alt="..." style="width: 100%;"/>
+           </div>
+           <div class="text-center d-flex justify-content-center align-items-center" style="flex-basis: 50%;">
+            <div class="">
+              <h2 class="fw-light pb-3 fs-4 text-danger " style="letter-spacing: 3px;margin-top:20px;">MOVIEVERSE INSIDER</h2>
+              <h3 class="text-white fs-1 fw-bolder" style="letter-spacing: 1px;">Watch, Earn, Redeem!</h3>
+              <p class="text-white fs-5 fw-light" style="letter-spacing: 0.5px;">
+                Get rewarded for doing what you already do as a
+                &nbsp;fan.
+              </p>
+              <button type="button" class=>
+              JOIN NOW
+              </button>
+              <p class="text-white fs-6 fw-light mt-5">Terms And Conditions Apply</p>
+            </div>
+           </div>
           </div>
-        </div>
+          </div>
       </section>
-      <section>
-        <div class="container">
-          <div class="vkbox2">
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-          </div>
-          <div>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-          </div>
-        </div>
-      </section>
-    </footer> -->
-    <footer id="vk ">
-      <!-- section bg color :black  -->
-      <section id="vk-s1 " class="bg-black">
-        <div class="container ">
-          <div class="vsec1  d-flex">
-            <div
-              class="container-md bg-black d-flex justify-content-center align-items-center"
-              style="width: 60%"
-            >
-              <img src="./images/MvV.png" class="img-fluid vkmv" alt="..." /
-              style="height: 200px ;width: 200px;">
-              <!-- <img src="" alt="" /> -->
+      <section style="background-color:#151515;">
+        <div class="container" style="background-color:#151515;">
+          <div class="vkbox2 text-white row pt-3">
+            <div class="col-lg-2 p-3 col-sm-4 rounded">
+              <img src="./images/logom.png" alt="" class="rounded">
             </div>
-            <!-- second child -->
-            <div
-              class="container-md bg-black d-flex justify-content-center align-items-center"
-            >
-              <div class="container-sm bg-black">
-                <div class="container bg-black text-center mt-3 text-danger">
-                  <h2>MOVIEVERSE INSIDER</h2>
-                </div>
-                <div
-                  class="container text-center mt-3 .text-body-emphasis bg-black"
-                >
-                  <h3 class="text-white">Watch,Earn,Redeem!</h3>
-                </div>
-                <div
-                  class="container mt-3 text-center text-white fs-3 bg-black"
-                >
-                  <p>
-                    Get rewarded for doing what you already do as a
-                    &nbsp;&nbsp;fan.
-                  </p>
-                </div>
-                <div
-                  class="container d-flex justify-content-center align-items-center mt-3 bg-black"
-                >
-                  
-                  
-                  <div class="slanted-div">
-                    <button
-                    type="button align-self-center"
-                    class="btn btn-danger"
-                  >
-                    JOIN NOW
-                  </button>
-                  </div>
-                  
-
-
-
-                </div>
-                <div
-                  class="container bg-black text-center mt-5 text-body-emphasis"
-                >
-                  <h6 class="text-white">Terms And Conditions Apply</h6>
-                </div>
+            <div class="p-2 col-lg-4 col-sm-8 d-flex justify-content-between align-items-center">
+              <div class="text-white fw-bold fs-6">
+                <p class="p-1 m-0">ABOUT MOVIEVERSE</p>
+                <p class="p-1 m-0">HELP/FAQS</p>
+                <p class="p-1 m-0">CAREERS</p>
+                <p class="p-1 m-0">INTERNSHIPS</p>
+              </div>
+              <div class="p-2 text-white fs-6" style="font-weight: 400;">
+                <p class="p-1 m-0">ADVERTISING</p>
+                <p class="p-1 m-0">DISNEY+</p>
+                <p class="p-1 m-0">MOVIEVERSE.COM</p>
+                <p class="p-1 m-0">REDEEM DIGITAL COMIC</p>
               </div>
             </div>
-          </div>
-        </div>
-      </section>
-      <!-- section bg color :grey -->
-
-      <section id="vk-s2" >
-        <div class="container">
-          <!--  -->
-          <div class="parent">
-            <!-- copy of previous container -->
-            <div class="one">
-              <!-- child1 -->
-              <div class="vbk-i">
-                <img src="./images/logom.png" alt="" />
-              </div>
-            </div>
-            <!-- end -->
-
-            <!-- child2 start -->
-            <div class="two">
-              <div>
-                <ul>
-                  <li>
-                    <a href="#" class="hover-effect icon-link icon-link-hover"
-                      >ABOUT MOVIEVERSE</a
-                    >
-                  </li>
-                  <li><a href="#">HELP/FAQS</a></li>
-                  <li><a href="#">CAREERS</a></li>
-                  <li><a href="#">INTERNSHIPS</a></li>
-                </ul>
-              </div>
-              <div>
-                <ul>
-                  <li><a href="#">ADVERTISING</a></li>
-                  <li><a href="#">DISNEY+</a></li>
-                  <li><a href="#">MOVIEVERSE.COM</a></li>
-                  <li><a href="#">REDEEM DIGITAL COMIC</a></li>
-                </ul>
-              </div>
-            </div>
-
-            <!-- child2 end -->
-
-            <!-- child3 start -->
-            <div class="three">
-              <div class="three1">
-                <div class="poto1" style="">
-                  <div>
-                    <img src="./images/insider.png" alt=""  /><h4
-                      >MOVIEVERSE INSIDER</h4
-                    >
-                  </div>
-                  <div class="text">
-                    <div>
-                      <h6>Get Rewarded for Being a Marvel Fan</h6>
-                    </div>
-                  </div>
-
-                  <!--  -->
+            <div class="col-lg-3 col-sm-12 d-flex justify-content-between align-items-center align-content-center">
+                <div>
+                  <p class="fw-bolder fs-6 p-1 m-0" style="letter-spacing: 0.5px;">MOVIEVERSE INSIDER</p>
+                  <p  class="p-1 m-0" style="color:gray">Get Rewarded for Being a Marvel Fan</p>         
                 </div>
-               
-              </div>
-              <div class="three2">
-                <div class="poto">
-                  <div>
-                    <img
-                    src="./images/vku.png"
-                    alt=""
-                    
-                  />
-                  <h4 
-                    >MOVIE UNLIMITED</h4
-                  >
-                  </div>
-                  <div class="text">
-                    <div>
-                      <h6>Access over 30,000+ digital comics</h6>
-                    </div>
-                   
-                  </div>
-                  <!--  -->
-                </div>
-                
-              </div>
+                <div>
+                  <p class="fw-bolder fs-6 p-1 m-0" style="letter-spacing: 0.5px;">MOVIE UNLIMITED</p>
+                  <p  class="p-1 m-0" style="color:gray;">Access over 30,000+ digital comics</p>          
+                </div> 
             </div>
-            <!-- end -->
-            <div class="four">
-              <div>
-                <h4 class="vkh4">FOLLOW MOVIEVERSE</h4>
-              </div>
-
-              <div>
-                <i
-                  class="fa-brands fa-square-facebook"
-                  style="color: #737785"
-                ></i>
-              </div>
-              <div>
-                <i class="fa-brands fa-x-twitter" style="color: #737785"></i>
-              </div>
-              <div>
-                <i
+            <div class="col-lg-3 col-sm-12">
+              <p class="fw-bolder fs-6 mt-5" style="letter-spacing:1px;">FOLLOW MOVIEVERSE</p>
+              <div class="d-flex gap-5  align-items-center flex-wrap align-content-center">
+                <span>
+                  <i class="fa-brands fa-square-facebook" style="color: #737785"></i>
+                </span>
+                <span> <i class="fa-brands fa-x-twitter" style="color: #737785"></i></span>
+                <span><i class="fa-brands fa-x-twitter" style="color: #737785"></i></span>
+                <span><i
                   class="fa-brands fa-square-instagram"
                   style="color: #737785"
-                ></i>
-              </div>
-              <div>
-                <i class="fa-brands fa-tumblr" style="color: #737785"></i>
-              </div>
-              <div>
-                <i class="fa-brands fa-youtube" style="color: #737785"></i>
-              </div>
-              <div>
-                <i
+                ></i></span>
+                <span><i class="fa-brands fa-tumblr" style="color: #737785"></i></span>
+                <span><i class="fa-brands fa-youtube" style="color: #737785"></i></span>
+                <span><i
                   class="fa-brands fa-square-snapchat"
                   style="color: #737785"
-                ></i>
+                ></i></span>
+                <span><i class="fa-brands fa-pinterest" style="color: #737785"></i></span>
+                <span>
+                  <i class="fa fa-snapchat" aria-hidden="true"></i>
+                </span>
               </div>
-              <div>
-                <i class="fa-brands fa-pinterest" style="color: #737785"></i>
-              </div>
-              <div>
-                <i class="fa fa-snapchat" aria-hidden="true"></i>
-              </div>
-             
             </div>
           </div>
-          <div class="lastfooter ">
+          </div>
+      </section>
+      <section style="background-color:#151515; padding: 10px;">
+        <div class="container">
+          <div class="lastfooter d-flex gap-4 justify-content-center align-items-center flex-wrap" style=" color:grey;background-color:#151515 ;" >
             <span>Terms of Use</span>
             <span>Privacy Policy</span>
             <span>Addendum to the Global Privacy Policy</span>
@@ -1917,8 +1787,7 @@ margin-bottom: 20px;
         </div>
       </section>
     </footer>
+   
     <!-------------------------- Part Vishal End------------------------------>
   </body>
-</html>
-
 </html>
