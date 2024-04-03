@@ -1,8 +1,11 @@
 /*-------- akash styling------------------------------------------------------------------------------------ */
 
-     
 
-      .icon--insider-circle {
+
+
+
+
+.icon--insider-circle {
   fill: white; 
              }
       
@@ -110,26 +113,8 @@
       #ak_3rd h5 {
         color: white;
         text-align: center;
-      }
-
-
-
-
-
-
-
- /*  */
-
-
-
- /*  */
-
-
-
-      
-      #ak_thirdnav p,img:hover{
-        cursor: pointer;
-      }
+      }      
+     
 
 
       /*  */
@@ -240,14 +225,14 @@
         background-color: transparent;
         /* margin: auto; */
         }
-        .carousel-item .ak_text h1{
+        .carousal-btm h1,.carousel-item .ak_text h1{
         font-size: 50px;
         font-weight: 800;
         }
-        .carousel-item .ak_text P{
+        .carousal-btm P,.carousel-item .ak_text P{
         font-size: 20px;
         }
-        .carousel-item .ak_text button{
+        .carousal-btm button,.carousel-item .ak_text button{
         border: none;
         padding: 10px 35px;
         background: rgb(227, 9, 9);
@@ -256,7 +241,7 @@
         border-radius: 20px 0;
         transition: 1s ease;
         }
-        .carousel-item .ak_text button:hover{
+        .carousal-btm button:hover, .carousel-item .ak_text button:hover{
           
            
             background-color:#720609;
@@ -308,4 +293,38 @@
             cursor: pointer;
             color: #720609;
         }
-      
+
+.carousal-btm{
+  color: white;
+  height: 400px;
+  margin-top: 100px;
+  padding: 20px;
+}
+
+        
+@media (max-width:840px){
+  #ak_firstnav{
+    display: none;
+  }
+  #ak_secondnav{
+    display: none;
+  }
+  #ak_links{
+    display: none;
+  }
+  .ak_text-2{
+    padding: 5px 20px;
+    justify-content: space-between;
+  }
+  .ak_text{
+    display: none;
+  }
+}
+@media (min-width:841px){
+  .ak_text-2>span,#smallscreen{
+    display: none;
+  }
+  .carousal-btm{
+    display:none;
+  }
+}
