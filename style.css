@@ -15,10 +15,10 @@
        .navbar{
         width: 100% !important;
         padding-right: 0px !important;
-        background-color: #202020;
+        background-color: #202020 !important;
        }
          #ak_firstnavv{
-          /* background-color: #202020; */
+        
           padding: 0px;
         margin: 0px;
         background-color: #202020;
@@ -112,6 +112,21 @@
         text-align: center;
       }
 
+
+
+
+
+
+
+ /*  */
+
+
+
+ /*  */
+
+
+
+      
       #ak_thirdnav p,img:hover{
         cursor: pointer;
       }
@@ -131,8 +146,9 @@
         background-color: #ffffff;
         padding: 10px;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-        z-index: 1001;
+        z-index: 2;
         color: black;
+        
        
 }
  #ak_secondnav h6{
@@ -211,13 +227,18 @@
         .carousel-item{
         position: relative;
         }
+
+      
         .carousel-item .ak_text{
-        position: absolute;
+          position: absolute;
         left: 8%;
         top: 40%;
-        color: rgba(255, 255, 255, 1);
+        
+        color: rgb(248, 242, 242);
         font-family: "Roboto Condensed", sans-serif;
         width: 55%;
+        background-color: transparent;
+        /* margin: auto; */
         }
         .carousel-item .ak_text h1{
         font-size: 50px;
@@ -280,10 +301,11 @@
         }
         .ak_text-2 .ak_icons i{
         margin: 5px 10px;
-        font-size: 25px;
+        font-size:30px;
         }
 
         .ak_icons i:hover{
             cursor: pointer;
+            color: #720609;
         }
       
