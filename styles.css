@@ -954,7 +954,9 @@ section#sk .launch-time {
   background-color: red;
   margin: 5px;
 }
-
+section#sk .hover:hover{
+  color:red;
+}
 /* sunny part styles end */
 /************************vishal start******************/
 footer .f_l:hover {
