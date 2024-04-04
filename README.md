@@ -67,4 +67,14 @@ To run this project locally:
          <span><a href="https://github.com/rajatsah95">rajat kumar</a></span>     <span><a href="https://github.com/Chaitali124">chaitali</a></span>    <span><a href="https://github.com/uk70">vishal</a></span>
    </div>
 
+## License
+
+This project is licensed under GNU GENERAL PUBLIC LICENSE - see the [LICENSE](LICENSE) file for details.
+
+
+## Acknowledgments
+
+- Inspired by the beauty of travel and exploration.
+- Special thanks to the supportive community at [MOVIEVERSE].
+
 
