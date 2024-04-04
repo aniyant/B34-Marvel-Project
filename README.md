@@ -12,7 +12,7 @@ MOVIEVERSE is a single-page web component designed to provide a sleek and dynami
 <img src="./assets/mv_mobile.png" alt="Mobile View" width="300" 
 style="box-shadow: 0px 6px 30px rgba(0, 0, 0, 0.8);">
 
-#### Table View
+#### Tablet View
 <img src="./assets/mv_tablet.png" alt="Mobile View" width="300" 
 style="box-shadow: 0px 6px 30px rgba(0, 0, 0, 0.8);">
 
@@ -64,5 +64,5 @@ To run this project locally:
 
 ## Contributors
 1. <a href="https://github.com/aniyant">
-  <img src="https://avatars.githubusercontent.com/u/25197437?s=64&v=4" />
+  <img src="https://avatars.githubusercontent.com/u/25197437?s=64&v=4" style="width:100px;"/>
 </a>
