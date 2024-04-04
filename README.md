@@ -63,8 +63,8 @@ To run this project locally:
 3. Explore the MOVIEVERSE experience right from your device.
 
 ## Contributors
-   <div style="display:flex;gap:15px;"><span><a href="https://github.com/aniyant">sunny kumar</a><span> <span><a href="https://github.com/Akash2304">Akash Rajpoot</a><span> <span><a href="https://github.com/mr-taqi">Syed</a><span>
-      <span><a href="https://github.com/rajatsah95">rajat kumar</a><span><span><a href="https://github.com/Chaitali124">chaitali</a><span><span><a href="https://github.com/uk70">vishal</a><span>
+   <div style="display:flex;gap:20px;"><span><a href="https://github.com/aniyant">sunny kumar</a><span> <span><a href="https://github.com/Akash2304">Akash Rajpoot</a><span> <span><a href="https://github.com/mr-taqi">Syed</a><span>
+      <span><a href="https://github.com/rajatsah95">rajat kumar</a></span> <span><a href="https://github.com/Chaitali124">chaitali</a></span> <span><a href="https://github.com/uk70">vishal</a></span>
    </div>
 
 
