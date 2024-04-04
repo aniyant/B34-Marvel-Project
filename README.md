@@ -63,6 +63,8 @@ To run this project locally:
 3. Explore the MOVIEVERSE experience right from your device.
 
 ## Contributors
-1. <a href="https://github.com/aniyant">
-  <img src="https://avatars.githubusercontent.com/u/25197437?s=64&v=4" style="width:100px;"/>
-</a>
+1. <div>
+   <p><a href="https://github.com/aniyant">sunny kumar</a></p>
+  <img src="https://avatars.githubusercontent.com/u/25197437?s=64&v=4" style="width:75px;"/>
+  </div>
+
